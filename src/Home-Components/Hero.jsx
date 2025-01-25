@@ -36,7 +36,7 @@ const Hero = () => {
         ></div>
 
         <div className='w-[90%] mx-auto min-h-screen px-8 pt-10 lg:p-20 flex flex-col justify-center items-center lg:items-start '>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl text-white font-semibold mb-4 text-center lg:text-left" data-aos="slide-right" data-aos-delay="300">
+          <h1 className="text-3xl text-border sm:text-4xl lg:text-5xl text-black font-semibold mb-4 text-center lg:text-left" data-aos="slide-right" data-aos-delay="300">
             <Typewriter
               words={[
                 "Turn Your Dream Plot Into Reality",
