@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/nmpng.png"
+import logo from "../assets/nmlogo.jpeg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -73,7 +73,7 @@ const Navbar = () => {
                                 </NavLink>
                             </div>
                         </div>
-                        <button className="hidden lg:block bg-gradient-to-r from-[#ece9e55c] via-[#26282b73] to-black hover:bg-gradient-to-l text-white font-semibold py-1 sm:py-2 px-8 rounded-lg transition duration-300 whitespace-nowrap tracking-wider border-b border-e-2 border-gray-300" data-aos="flip-left" data-aos-delay="300">
+                        <button className="hidden lg:block bg-gradient-to-r from-[#ece9e55c] via-[#26282b73] to-black hover:bg-gradient-to-l text-white font-semibold py-1 sm:py-2 px-8 rounded-lg transition duration-300 whitespace-nowrap tracking-wider border-b border-e-2 border-gold" data-aos="flip-left" data-aos-delay="300">
                             <div className='flex items-center gap-3 font-bold text-xl text-white hover:text-black'>
                                 <span className='text-[15px] text-white'>Explore Now</span><span className='text-2xl animate-bounce'></span>
                             </div>

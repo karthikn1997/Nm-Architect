@@ -30,7 +30,7 @@
     height: 1.5px;
     bottom: 0;
     left: 50%;
-    background-color: #D1D5DB;
+    background-color: #D2B77A;
     transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
 }
 
@@ -52,7 +52,7 @@
     height: 1.5px;
     bottom: 0;
     left: 0;
-    background-color: #D1D5DB;
+    background-color: #D2B77A;
 }
 
 .hero-section {
@@ -93,7 +93,7 @@
   }
   
 .text-border {
-  text-shadow: 1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white;
+  text-shadow: 1px 1px 0px white, -1px -1px 0px #D2B77A, 1px -1px 0px #D2B77A, -1px 1px 0px #D2B77A;
 }
 .text-border-bottom {
   position: relative;

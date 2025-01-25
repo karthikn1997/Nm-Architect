@@ -13,7 +13,7 @@ export default {
       colors: {
         'primary': '#0F0F0F',
         'secondary': '#EBCFA7',
-        'gold': '#FFD700'
+        'gold': '#D2B77A'
       },
     },
   },

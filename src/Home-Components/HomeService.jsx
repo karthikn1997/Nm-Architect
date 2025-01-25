@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceBg from "../assets/nmpngcut.png"
+import ServiceBg from "../assets/servbg.png"
 import { PiBuildingOfficeLight } from "react-icons/pi";
 import { TbBuildingWarehouse } from "react-icons/tb";
 import { FaPeopleRoof } from "react-icons/fa6";
@@ -12,7 +12,7 @@ const HomeService = () => {
         <div className='relative w-full min-h-screen'>
 
             <div className="w-[80%] mx-auto absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${ServiceBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.15 }}
+                style={{ backgroundImage: `url(${ServiceBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.3 }}
             ></div>
 
             <div className='relative w-full min-h-screen flex justify-center items-center gap-4'>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import HeroBg from '../assets/el.png';
+import HeroBg from '../assets/main1.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "slick-carousel/slick/slick.css";
@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="absolute inset-0 z-0"></div> {/* Transparent overlay */}
 
         <div className="w-full absolute inset-0 bg-cover bg-center  "
-          style={{ backgroundImage: `url(${HeroBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 1 }}
+          style={{ backgroundImage: `url(${HeroBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.3 }}
         ></div>
 
         <div className='w-[90%] mx-auto min-h-screen px-8 pt-10 lg:p-20 flex flex-col justify-center items-center lg:items-start '>
@@ -54,7 +54,7 @@ const Hero = () => {
           <p className="text-sm lg:text-xl tracking-wider text-white mb-4 md:mb-8 text-center lg:text-left" data-aos="slide-left" data-aos-delay="300">
             We're glad you're here. Discover amazing plots and join our community!
           </p>
-          <button className="bg-gradient-to-r from-[#ece9e55c] via-[#26282b73] to-black hover:bg-gradient-to-l text-white font-semibold py-2 sm:py-3 px-8 rounded-lg transition duration-300 border-b border-e-2 border-gray-300 whitespace-nowrap " data-aos="flip-left" data-aos-delay="300">
+          <button className="bg-gradient-to-r from-[#ece9e55c] via-[#26282b73] to-black hover:bg-gradient-to-l text-white font-semibold py-2 sm:py-3 px-8 rounded-lg transition duration-300 border-b border-e-2 border-gold whitespace-nowrap " data-aos="flip-left" data-aos-delay="300">
             <div className='flex items-center gap-3 font-bold text-xl text-white hover:text-black'>
               <span className='text-lg lg:text-2xl text-white'>Explore Now</span><span className='text-2xl animate-bounce'><FaRegArrowAltCircleDown className='text-gray-300' /></span>
             </div>

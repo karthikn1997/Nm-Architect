@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AOS from 'aos';
-import AboutBg from "../assets/nmbg1.png"
+import AboutBg from "../assets/aboutbg.png"
 import 'aos/dist/aos.css';
 
 const HomeAbout = () => {
@@ -11,13 +11,13 @@ const HomeAbout = () => {
     }, []);
 
     return (
-        <div className='relative w-full min-h-[50vh] flex flex-col lg:flex-row justify-center items-center overflow-hidden'>
+        <div className='relative w-full min-h-[60vh] flex flex-col lg:flex-row justify-center items-center overflow-hidden'>
             
             <div className="w-full absolute inset-0 bg-cover bg-center  "
-                style={{ backgroundImage: `url(${AboutBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.4 }}
+                style={{ backgroundImage: `url(${AboutBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.3 }}
             ></div>
 
-            <div className='relative w-full lg:w-[40%] h-[40vh] sm:h-[50vh] overflow-hidden flex flex-col justify-center items-center' data-aos="slide-left" data-aos-delay="300">
+            <div className='relative w-full lg:w-[40%] h-[40vh] sm:h-[60vh] overflow-hidden flex flex-col justify-center items-center' data-aos="slide-left" data-aos-delay="300">
                 {/* <img src={Worker} className="w-full h-[40vh] sm:h-[60vh] object-cover" alt="" /> */}
                 <h2 className="text-gray-300 text-5xl font-bold">Who We Are ?</h2>
             </div>
