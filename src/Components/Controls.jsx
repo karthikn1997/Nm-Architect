@@ -39,7 +39,7 @@ function Controls() {
 
             {isVisible && (
                 <button
-                    className=" bg-gray-300 hover:shadow-lg hover:shadow-[#26282B] p-[2px] rounded-full shadow-md transition duration-300 cursor-pointer"
+                    className=" bg-gold hover:shadow-lg hover:shadow-[#26282B] p-[2px] rounded-full shadow-md transition duration-300 cursor-pointer"
                     onClick={scrollToTop}
                 >
                     <div className="relative w-12 h-12">

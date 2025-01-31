@@ -15,6 +15,22 @@ export default {
         'secondary': '#EBCFA7',
         'gold': '#D2B77A'
       },
+      fontFamily: {
+        lora: ['Lora', 'serif'], // Add 'Lora' font
+        smooch: ['Smooch Sans', 'serif'], // Add 'Smooch Sans' font
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(50%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        slide: "slide 140s linear infinite",
+        bounceSlow: 'bounceSlow 4s ease-in-out infinite',
+        bounceMedium: 'bounceSlow 2s ease-in-out infinite',
+        spinBorder: 'spinBorder 6s linear infinite',
+      },
     },
   },
   plugins: [],

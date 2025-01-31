@@ -6,6 +6,8 @@ import Future from '../Home-Components/Future';
 import About from '../Home-Components/About';
 import Projects from '../Home-Components/Projects';
 import HomeService from '../Home-Components/HomeService';
+import Ideas from '../Home-Components/Ideas';
+import HomePortfolio from '../Home-Components/HomePortfolio';
 
 const Home = () => {
 
@@ -16,12 +18,14 @@ const Home = () => {
   return (
     <div >
       <Hero />
-      <Counters />
+      {/* <Counters /> */}
       <HomeAbout />
-      <About />
+      <Ideas />
+      {/* <About /> */}
       {/* <Future /> */}
-      {/* <Projects /> */}
       <HomeService />
+      {/* <Projects /> */}
+      <HomePortfolio />
     </div>
   );
 };

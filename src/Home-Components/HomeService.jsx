@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceBg from "../assets/servbg.png"
+import ServiceBg from "../assets/rt3.png"
 import { PiBuildingOfficeLight } from "react-icons/pi";
 import { TbBuildingWarehouse } from "react-icons/tb";
 import { FaPeopleRoof } from "react-icons/fa6";
@@ -11,13 +11,15 @@ const HomeService = () => {
     return (
         <div className='relative w-full min-h-screen'>
 
-            <div className="w-[80%] mx-auto absolute inset-0 bg-cover bg-center"
+            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+
+            <div className="w-[100%] mx-auto absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${ServiceBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.3 }}
             ></div>
 
-            <div className='relative w-full min-h-screen flex justify-center items-center gap-4'>
-                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8'>
-                    <div className='w-[70%] flex flex-col justify-center items-end text-gray-300 text-right'>
+            <div className='relative w-full min-h-screen flex justify-center items-center gap-20 z-50'>
+                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 pr-10'>
+                    <div className='w-[70%] flex flex-col justify-center items-end text-gray-300 text-right '>
                         <PiBuildingOfficeLight
                             className="w-20 h-20 text-gold"
                             style={{
@@ -49,7 +51,7 @@ const HomeService = () => {
                         <p className='text-gray-400 text-md'>Townships | Sports Complexes | Campus Planning | Large Scale Hospitals | Public Buildings</p>
                     </div>
                 </div>
-                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8'>
+                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 pl-10'>
                     <div className='w-[70%] flex flex-col justify-center items-start text-gray-300 text-left'>
                         <FaPeopleRoof className="w-20 h-20 text-gold"
                             style={{
