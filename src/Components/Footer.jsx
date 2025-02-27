@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaPhone, FaHeart } from 'react-icons/fa'; // Import icons
 import { LuDiamond } from "react-icons/lu";
-import ImageBG from "../assets/hero.jpg"
+import ImageBG from "../assets/c3.jpg"
 
 
 function Footer() {
@@ -15,13 +15,21 @@ function Footer() {
         <footer
             className=" text-white md:py-12 relative"
         >
-            <div className="bg-black bg-opacity-50 py-8 md:py-12 border-t-4 border-gold border-b border-opacity-60">
-                <div className="w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px]">
+            <div className="relative bg-black bg-opacity-50 py-8 md:py-12 border-t-4 border-b border-gold border-opacity-60">
+
+                <div className="absolute inset-0 z-10 bg-gradient-to-b from-black via-transparent to-black"></div>
+
+                <div className="w-full absolute inset-0 bg-cover bg-center  "
+                    style={{ backgroundImage: `url(${ImageBG})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.5 }}
+                ></div>
+
+                {/* Shining Top Border */}
+                <div className="absolute -top-1 left-0 w-[70%] h-[1px] animate-shine "></div>
+
+                <div className="relative z-50 w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px] ">
                     {/* Clinic Overview */}
-                    <div className="w-full flex flex-col items-center mb-6" data-aos="fade-right">
-                        <h1 className="text-2xl md:text-6xl font-extrabold font-nunito mb-2 text-border-light text-black uppercase">
-                            Nm Square Architecture
-                        </h1>
+                    <div className="w-full flex flex-col items-center mb-12" data-aos="fade-right">
+                        <h2 className='text-6xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Smooch Sans" }}><span className="text-white" style={{ fontFamily: "Smooch Sans" }}>Nm Square</span> Architecture</h2>
                         <p className="text-center text-sm tracking-widest text-gold">
                             Build Your Future with Our Plots
                         </p>
@@ -119,7 +127,7 @@ function Footer() {
                         <div className="flex flex-col col-span-2 xs:col-span-1 justify-center items-center xs:justify-start xs:items-start" data-aos="fade-right ">
                             <h2 className="text-lg font-semibold float-left mb-2 text-gray-300">Address </h2>
                             <address className="sm:w-[200px] not-italic mb-2 text-center xs:text-left">
-                                1A, K.V.N Building, 
+                                1A, K.V.N Building,
                             </address>
                             <p className='mb-2'>
                                 <span className="">Mill Road, Ramesh Theatre East Side</span>

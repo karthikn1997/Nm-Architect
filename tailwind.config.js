@@ -17,7 +17,10 @@ export default {
       },
       fontFamily: {
         lora: ['Lora', 'serif'], // Add 'Lora' font
-        smooch: ['Smooch Sans', 'serif'], // Add 'Smooch Sans' font
+        allura: ['Allura', 'cursive'],
+        bitter: ['Bitter', 'serif'],
+        caveat: ['Caveat', 'cursive'],
+        smooch: ['Smooch Sans', 'sans-serif'],
       },
       keyframes: {
         slide: {

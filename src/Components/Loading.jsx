@@ -1,15 +1,19 @@
-
-import React from 'react';
-import { FaSpinner } from 'react-icons/fa'; // Import an icon from react-icons
-
+import React from "react";
+import { FaSpinner } from "react-icons/fa";
 
 const Loading = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-[#26282B] ">
-      <FaSpinner className="text-[#EBCFA7] animate-spin" size={88} />
-      <h2 className="text-2xl m-5 font-bold text-white transition-all duration-300 tracking-widest "
-        >
-          Nm Square </h2>
+    <div className="flex flex-col items-center justify-center h-screen bg-[#1E1F21]">
+      {/* Spinner with glowing effect */}
+      <div className="relative">
+        <FaSpinner className="text-[#EBCFA7] animate-spin text-6xl" />
+        <div className="absolute inset-0 animate-ping bg-[#EBCFA7] opacity-30 rounded-full"></div>
+      </div>
+
+      {/* Loading Text */}
+      <h2 className="text-3xl mt-5 font-bold text-white tracking-widest animate-pulse">
+        Nm Square Architecture
+      </h2>
     </div>
   );
 };

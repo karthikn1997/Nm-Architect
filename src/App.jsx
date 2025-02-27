@@ -10,6 +10,8 @@ import Commercial from './Pages/Commercial';
 import Residential from './Pages/Residential';
 import Services from './Pages/Services';
 import Contact from './Pages/Contact';
+import ProjectDetails from './Residential-Components/ProjectDetails';
+import ProjectDetailsCom from './Commercial-Components/ProjectDetailsCom';
 
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
             <Route path="/portfolio/residential" element={<Residential />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects/:projectName" element={<ProjectDetails />} />
+            <Route path="/commercial-projects/:projectName" element={<ProjectDetailsCom />} />
           </Route>
         </Routes>
       </BrowserRouter>

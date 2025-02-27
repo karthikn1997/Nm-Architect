@@ -1,8 +1,13 @@
 import React from 'react'
+import ResidentialHero from '../Residential-Components/ResidentialHero'
+import ResidentialProjects from '../Residential-Components/ResidentialProjects'
 
 const Residential = () => {
   return (
-    <div>Residential</div>
+    <div>
+      <ResidentialHero />
+      <ResidentialProjects />
+    </div>
   )
 }
 

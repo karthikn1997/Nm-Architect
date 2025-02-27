@@ -13,12 +13,12 @@ const HomeService = () => {
 
             <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
-            <div className="w-[100%] mx-auto absolute inset-0 bg-cover bg-center"
+            {/* <div className="w-[100%] mx-auto absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${ServiceBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.3 }}
-            ></div>
+            ></div> */}
 
-            <div className='relative w-full min-h-screen flex justify-center items-center gap-20 z-50'>
-                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 pr-10'>
+            <div className='relative w-[95%] p-8 mx-auto min-h-screen flex justify-center items-center gap-10 z-50'>
+                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 border-r border-t border-b border-gold'>
                     <div className='w-[70%] flex flex-col justify-center items-end text-gray-300 text-right '>
                         <PiBuildingOfficeLight
                             className="w-20 h-20 text-gold"
@@ -51,7 +51,7 @@ const HomeService = () => {
                         <p className='text-gray-400 text-md'>Townships | Sports Complexes | Campus Planning | Large Scale Hospitals | Public Buildings</p>
                     </div>
                 </div>
-                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 pl-10'>
+                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 border-l border-t border-b border-gold'>
                     <div className='w-[70%] flex flex-col justify-center items-start text-gray-300 text-left'>
                         <FaPeopleRoof className="w-20 h-20 text-gold"
                             style={{

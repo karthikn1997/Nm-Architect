@@ -8,6 +8,7 @@ import Projects from '../Home-Components/Projects';
 import HomeService from '../Home-Components/HomeService';
 import Ideas from '../Home-Components/Ideas';
 import HomePortfolio from '../Home-Components/HomePortfolio';
+import ContactForm from '../Contact-component/ContactForm';
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
       <HomeService />
       {/* <Projects /> */}
       <HomePortfolio />
+      <ContactForm />
     </div>
   );
 };
