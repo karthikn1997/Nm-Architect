@@ -25,7 +25,7 @@ const HomePortfolio = () => {
 
                         <div className='relative h-full p-8 flex flex-col justify-center items-center rounded-md hover:scale-105 transform transition-all duration-700'>
                             <RiMoneyRupeeCircleLine className='text-5xl sm:text-7xl text-white mb-4 border-2 p-3 rounded-full border-gold border-opacity-50 z-50' />
-                            <h3 className='text-xl  text-white tracking-wider mb-2 z-50' style={{ fontFamily: "Orbitron" }}>Cost Consultancy</h3>
+                            <h3 className='text-2xl  text-[#fae4af] tracking-wider mb-2 z-50' style={{ fontFamily: "Rolland" }}>Cost Consultancy</h3>
                             <p className='text-md text-gray-300 tracking-wider font-light z-50'>
                                 Budgets Upfront
                             </p>
@@ -33,7 +33,7 @@ const HomePortfolio = () => {
 
                         <div className='relative h-full p-8 flex flex-col justify-center items-center hover:scale-105 transform transition-all duration-700'>
                             <SlEyeglass className='text-5xl sm:text-7xl text-white mb-4 border-2 p-3 rounded-full border-gold border-opacity-50 z-50' />
-                            <h3 className='text-xl  text-white tracking-wider mb-2 z-50 ' style={{ fontFamily: "Orbitron" }}>See what you’ll get</h3>
+                            <h3 className='text-2xl  text-[#fae4af] tracking-wider mb-2 z-50 ' style={{ fontFamily: "Rolland" }}>See what you’ll get</h3>
                             <p className='text-md text-gray-300 tracking-wider font-light z-50'>
                                 360 Visualization
                             </p>
@@ -41,7 +41,7 @@ const HomePortfolio = () => {
 
                         <div className='relative h-full p-8 flex flex-col justify-center items-center hover:scale-105 transform transition-all duration-700'>
                             <GiTakeMyMoney className='text-5xl sm:text-7xl text-white mb-4 border-2 p-3 rounded-full border-gold border-opacity-50 z-50' />
-                            <h3 className='text-xl  text-white tracking-wider mb-2 z-50' style={{ fontFamily: "Orbitron" }}>Cost Control</h3>
+                            <h3 className='text-2xl  text-[#fae4af] tracking-wider mb-2 z-50' style={{ fontFamily: "Rolland" }}>Cost Control</h3>
                             <p className='text-md text-gray-300 tracking-wider font-light z-50'>
                                 Accurate BOQ
                             </p>
@@ -49,7 +49,7 @@ const HomePortfolio = () => {
 
                         <div className='relative h-full p-8 flex flex-col justify-center items-center hover:scale-105 transform transition-all duration-700'>
                             <TbPigMoney className='text-5xl sm:text-7xl text-white mb-4 border-2 p-3 rounded-full border-gold border-opacity-50 z-50' />
-                            <h3 className='text-xl  text-white tracking-wider mb-2 z-50' style={{ fontFamily: "Orbitron" }}>Big Savings</h3>
+                            <h3 className='text-2xl  text-[#fae4af] tracking-wider mb-2 z-50' style={{ fontFamily: "Rolland" }}>Big Savings</h3>
                             <p className='text-md text-gray-300 tracking-wider font-light z-50'>
                                 Vendor Discounts
                             </p>
@@ -57,7 +57,7 @@ const HomePortfolio = () => {
 
                         <div className='relative h-full p-8 flex flex-col justify-center items-center hover:scale-105 transform transition-all duration-700'>
                             <CiMedal className='text-5xl sm:text-7xl text-white mb-4 border-2 p-3 rounded-full border-gold border-opacity-50 z-50' />
-                            <h3 className='text-xl  text-white tracking-wider mb-2 z-50' style={{ fontFamily: "Orbitron" }}>Quality Control</h3>
+                            <h3 className='text-2xl  text-[#fae4af] tracking-wider mb-2 z-50' style={{ fontFamily: "Rolland" }}>Quality Control</h3>
                             <p className='text-md text-gray-300 tracking-wider font-light z-50'>
                                 Photographic Progress
                             </p>
@@ -65,7 +65,7 @@ const HomePortfolio = () => {
 
                         <div className='relative h-full p-8 flex flex-col justify-center items-center hover:scale-105 transform transition-all duration-700 '>                        
                             <TbProgressCheck className='text-5xl sm:text-7xl text-white mb-4 border-2 p-3 rounded-full border-gold border-opacity-50 z-50' />
-                            <h3 className='text-xl  text-white tracking-wider mb-2 z-50' style={{ fontFamily: "Orbitron" }}>Clarity on Govt. Process</h3>
+                            <h3 className='text-2xl  text-[#fae4af] tracking-wider mb-2 z-50' style={{ fontFamily: "Rolland" }}>Clarity on Process</h3>
                             <p className='text-md text-gray-300 tracking-wider font-light z-50'>
                                 Liasoning and Approvals
                             </p>

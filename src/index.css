@@ -5,12 +5,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  * {
-    @apply font-lora;
-  }
-} */
+@font-face {
+  font-family: 'Rolland';
+  src:  url('/fonts/RollandinEmilie.woff') format('woff');   
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Rc';
+  src:  url('/fonts/rc.woff') format('woff');   
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gp';
+  src:  url('/fonts/gp.woff') format('woff');   
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cr';
+  src:  url('/fonts/cr.woff') format('woff');   
+  font-weight: normal;
+  font-style: normal;
+}
 
 @layer utilities {
   .slow-spin {

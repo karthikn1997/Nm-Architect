@@ -31,11 +31,8 @@ function Footer() {
                 <div className="relative z-50 w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px] ">
                     {/* Clinic Overview */}
                     <div className="w-full flex flex-col items-center mb-12" data-aos="fade-right">
-                        {/* <h2 className='text-6xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Smooch Sans" }}><span className="text-white" style={{ fontFamily: "Smooch Sans" }}>Nm Square</span> Architecture</h2> */}
-                        <div className='flex mb-2 gap-1'>
-                            <img src={text1} alt="" className='h-[48px]' />
-                            <img src={text2} alt="" className='h-[55px]' />
-                        </div>
+                        <h2 className='text-5xl uppercase tracking-widest text-[#fae4af] mb-2' style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px #fae4af" }}><span className="text-white" style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px white" }}>Nm Square</span> Architecture</h2>
+                       
                         <p className="text-center text-sm tracking-widest text-gold">
                             Build Your Future with Our Plots
                         </p>

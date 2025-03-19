@@ -38,7 +38,7 @@ const Hero = () => {
         ></div>
 
         <div className='relative w-full mx-auto min-h-[100vh] px-8 pt-10 lg:pt-[200px] flex flex-col justify-center items-center z-10'>
-          <h1 className="text-3xl sm:text-3xl lg:text-4xl text-gold font-semibold mb-4 text-center lg:text-left italic " data-aos="slide-right" data-aos-delay="300" style={{fontFamily: "Orbitron" , textShadow: "2px 2px 0px black"}}>
+          <h1 className="text-3xl sm:text-3xl lg:text-5xl text-[#fae4af] font-light mb-4 text-center lg:text-left italic " data-aos="slide-right" data-aos-delay="300" style={{fontFamily: "Rolland" , textShadow: "2px 2px 0px black"}}>
             <Typewriter
               words={[
                 "Turn Your Dream Plot Into Reality",
