@@ -14,7 +14,7 @@ const AboutHero = () => {
 
                 <div className='text-white text-center'>
                     <p className='text-xl text-gold uppercase mb-2'>Who We Are ?</p>
-                    <h2 className='text-7xl font-extrabold tracking-widest text-gold' style={{ fontFamily: "Smooch Sans" }}><span className="text-white" style={{ fontFamily: "Smooch Sans" }}>Nm Square</span> Architecture</h2>
+                    <h2 className='text-5xl tracking-widest text-gold uppercase font-extrabold' style={{ fontFamily: "Megrim" }}><span className="text-white uppercase" style={{ fontFamily: "Megrim" }}>NM Square</span> Architecture</h2>
                 </div>
 
             </section>
@@ -22,5 +22,6 @@ const AboutHero = () => {
         </div>
     )
 }
+
 
 export default AboutHero

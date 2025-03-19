@@ -141,7 +141,7 @@ const projects = [
     {
         name: "Nithi Residence",
         location: "Coimbatore",
-        img: nithi1,
+        img: nithi8,
         images: [
             nithi1, nithi2, nithi3, nithi4, nithi5, nithi6, nithi7, nithi8, nithi9, nithi10,
             nithi11, nithi12, nithi13, nithi14, nithi15, nithi16, nithi17, nithi18, nithi19, nithi20,

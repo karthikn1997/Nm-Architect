@@ -68,8 +68,10 @@ const ProjectDetails = () => {
                 <img src={project.img} alt="" className="w-full h-full mx-auto object-cover " />
 
                 <div className="absolute w-full h-full top-0 bg-black bg-opacity-40 flex flex-col justify-center items-center">
-                    <h1 className="text-4xl font-bold text-center text-white uppercase tracking-wider">{project.name}</h1>
-                    <p className="text-2xl text-center text-gold font-semibold">{project.location}</p>
+                    <div className='w-full bg-black bg-opacity-50 px-4 py-2'>
+                        <h1 className=" text-4xl text-center text-white uppercase tracking-wider" style={{ fontFamily: "Audiowide" }}>{project.name}</h1>
+                        <p className="text-2xl text-center text-gold font-semibold uppercase">{project.location}</p>
+                    </div>
                 </div>
 
                 <div className='absolute w-full bottom-2 left-2 flex items-center text-lg text-gray-200 bg-black bg-opacity-50 px-8 py-2 z-20 tracking-wider '>

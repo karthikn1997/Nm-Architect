@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaPhone, FaHeart } from 'react-icons/fa'; // Import icons
 import { LuDiamond } from "react-icons/lu";
 import ImageBG from "../assets/c3.jpg"
+import text1 from "../assets/text1.jpeg"
+import text2 from "../assets/text2.jpeg"
 
 
 function Footer() {
@@ -29,7 +31,11 @@ function Footer() {
                 <div className="relative z-50 w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px] ">
                     {/* Clinic Overview */}
                     <div className="w-full flex flex-col items-center mb-12" data-aos="fade-right">
-                        <h2 className='text-6xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Smooch Sans" }}><span className="text-white" style={{ fontFamily: "Smooch Sans" }}>Nm Square</span> Architecture</h2>
+                        {/* <h2 className='text-6xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Smooch Sans" }}><span className="text-white" style={{ fontFamily: "Smooch Sans" }}>Nm Square</span> Architecture</h2> */}
+                        <div className='flex mb-2 gap-1'>
+                            <img src={text1} alt="" className='h-[48px]' />
+                            <img src={text2} alt="" className='h-[55px]' />
+                        </div>
                         <p className="text-center text-sm tracking-widest text-gold">
                             Build Your Future with Our Plots
                         </p>
@@ -80,7 +86,7 @@ function Footer() {
                                 <li className="flex items-center space-x-2">
                                     <LuDiamond className="text-gold" />
                                     <Link
-                                        to="/"
+                                        to="/portfolio"
                                         onClick={scrollToTop}
                                         className=" hover:text-gold"
                                     >

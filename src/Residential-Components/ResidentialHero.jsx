@@ -13,7 +13,7 @@ const ResidentialHero = () => {
                 ></div>
 
                 <div className='relative text-white text-center '>
-                    <h2 className='text-6xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}><span className="text-white" style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}>Residential</span> Projects</h2>
+                    <h2 className='text-6xl uppercase font-bold tracking-widest text-gold bg-black bg-opacity-50 px-4 pt-3 py-2' style={{ fontFamily: "Foldit", textShadow: "1px 1px 0px white" }}><span className="text-white" >Residential</span> Projects</h2>
                 </div>
 
             </section>

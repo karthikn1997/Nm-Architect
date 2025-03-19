@@ -12,6 +12,7 @@ import Services from './Pages/Services';
 import Contact from './Pages/Contact';
 import ProjectDetails from './Residential-Components/ProjectDetails';
 import ProjectDetailsCom from './Commercial-Components/ProjectDetailsCom';
+import Portfolio from './Pages/Portfolio';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/portfolio/commercial" element={<Commercial />} />
             <Route path="/portfolio/residential" element={<Residential />} />
             <Route path="/services" element={<Services />} />

@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bitter:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Audiowide&family=Bitter:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Foldit:wght@100..900&family=Geo:ital@0;1&family=Geostar+Fill&family=Megrim&family=Orbitron:wght@400..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Stalinist+One&family=Wallpoet&family=Zen+Tokyo+Zoo&display=swap');
 
 
 @tailwind base;
@@ -27,10 +26,8 @@
   position: relative;
   color: white;
   text-decoration: none;
-  padding: 0.2rem;
   transition: color 0.3s ease-in-out;
 }
-
 
 .nav-link::before {
     content: '';
@@ -38,7 +35,7 @@
     width: 0%;
     height: 1.5px;
     bottom: 0;
-    left: 50%;
+    left: 0%;
     background-color: #D2B77A;
     transition: width 0.8s ease-in-out, left 0.8s ease-in-out;
 }
@@ -50,7 +47,6 @@
 
 .nav-link-active {
     position: relative;
-    padding: 0.2rem;
     color: white;
 }
 
@@ -61,7 +57,7 @@
     height: 1.5px;
     bottom: 0;
     left: 0;
-    background-color: #D2B77A;
+   
 }
 
 .hero-section {
@@ -339,5 +335,74 @@
   border-right: 1px solid #D2B77A;
 }
 
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+  perspective: 800px; /* Adds depth */
+  position: relative;
+}
 
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+  perspective: 800px; /* Adds depth effect */
+}
+
+/* 3D Rotating Cube */
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 4s infinite linear;
+}
+
+/* Cube Faces with Logo */
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("./assets/nml.jpeg") center/cover no-repeat;
+  opacity: 1;
+  border: 1px solid rgb(189, 189, 189);
+  box-shadow: 0 0 2px white;
+}
+
+/* Positioning the cube faces */
+.front  { transform: rotateY(  0deg) translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.right  { transform: rotateY( 90deg) translateZ(50px); }
+.top    { transform: rotateX( 90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+/* Rotation animation */
+@keyframes rotateCube {
+  from { transform: rotateX(0deg) rotateY(0deg); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Loading text */
+.loading-text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #D2B77A;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: pulseText 2s infinite ease-in-out;
+}
+
+/* Pulse effect */
+@keyframes pulseText {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
 

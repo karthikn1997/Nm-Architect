@@ -37,9 +37,9 @@ const Navbar = () => {
 
     return (
         <nav className="relative z-50 top-0" data-aos="slide-down" data-aos-delay="300">
-            <div className="max-w-7xl mx-auto px-8 z-50">
-                <div className="flex items-center justify-between py-1">
-                    <div className="flex items-center justify-between w-full uppercase">
+            <div className="w-[85%] mx-auto px-8 z-50">
+                <div className="flex items-center py-1">
+                    <div className="flex items-center justify-between gap-10 w-full ">
                         <div className="flex-shrink-0 text-white">
                             <img
                                 src={logo}
@@ -47,8 +47,8 @@ const Navbar = () => {
                                 className="w-[70px] lg:w-[150px] "
                             />
                         </div>
-                        <div className="hidden md:block font-semibold text-md tracking-wider">
-                            <div className="ml-10 flex items-baseline space-x-12">
+                        <div className="hidden font-extralight text-[16px] tracking-wider">
+                            <div className="flex items-baseline space-x-8" style={{ fontFamily: "Orbitron" }}>
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
@@ -59,6 +59,7 @@ const Navbar = () => {
                                 >
                                     Home
                                 </NavLink>
+
                                 <NavLink
                                     to="/about"
                                     className={({ isActive }) =>
@@ -67,36 +68,9 @@ const Navbar = () => {
                                             : "nav-link"
                                     }
                                 >
-                                    About Us
+                                    About
                                 </NavLink>
-                                <div
-                                    className="relative group"
-                                    onClick={() => setDropdownOpen(true)}
-                                // onMouseLeave={() => setDropdownOpen(false)}
-                                >
-                                    <p className="flex items-center gap-2 cursor-pointer text-white">
-                                        Portfolio {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                                    </p>
 
-                                    {/* Dropdown Menu */}
-                                    {dropdownOpen && (
-                                        <div ref={menuRef} className="absolute left-0 mt-2 py-2 w-60 bg-black rounded-lg shadow-lg">
-                                            <NavLink
-                                                to="/portfolio/commercial"
-                                                className="block px-4 py-2 text-sm text-white hover:bg-gray-900 hover:text-gold "
-                                                
-                                            >
-                                                Commercial Projects
-                                            </NavLink>
-                                            <NavLink
-                                                to="/portfolio/residential"
-                                                className="block px-4 py-2 text-sm text-white hover:bg-gray-900 hover:text-gold "
-                                            >
-                                                Residential Projects
-                                            </NavLink>
-                                        </div>
-                                    )}
-                                </div>
                                 <NavLink
                                     to="/services"
                                     className={({ isActive }) =>
@@ -107,6 +81,7 @@ const Navbar = () => {
                                 >
                                     Services
                                 </NavLink>
+
                                 <NavLink
                                     to="/contact"
                                     className={({ isActive }) =>
@@ -115,25 +90,21 @@ const Navbar = () => {
                                             : "nav-link"
                                     }
                                 >
-                                    Contact Us
+                                    Contact
                                 </NavLink>
+
                             </div>
                         </div>
-                        {/* <button className="hidden lg:block bg-gradient-to-r from-[#ece9e55c] via-[#26282b73] to-black hover:bg-gradient-to-l text-white font-semibold py-1 sm:py-2 px-8 rounded-lg transition duration-300 whitespace-nowrap tracking-wider border-b border-e-2 border-gold" data-aos="flip-left" data-aos-delay="300">
-                            <div className='flex items-center gap-3 font-bold text-xl text-white hover:text-black'>
-                                <span className='text-[15px] text-white'>Explore Now</span><span className='text-2xl animate-bounce'></span>
-                            </div>
-                        </button> */}
                     </div>
-                    <div className="-mr-2 flex md:hidden">
+                    <div className="-mr-2 flex z-50 ">
                         <button
                             onClick={toggleNavbar}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-[#26282B]  focus:outline-none"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-white focus:outline-none"
                         >
                             {!isOpen ? (
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
+                                    className="h-10 w-10"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
@@ -148,7 +119,7 @@ const Navbar = () => {
                             ) : (
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
+                                    className="h-10 w-10"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
@@ -167,58 +138,104 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className="md:hidden bg-gray-200 flex justify-center items-center">
-                    <div className="px-2 py-2 pb-4 space-x-2 xxs:space-x-4 sm:space-x-8 sm:px-3 text-[14px] sm:text-[16px] font-semibold">
+                <div className="absolute min-h-screen w-[40%] right-0 top-0 flex justify-center items-center bg-black bg-opacity-80 " data-aos="slide-left" >
+                    <div className="px-10 py-2 pb-4 flex flex-col gap-8 tracking-wider " style={{ fontFamily: "Orbitron" }}>
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
                             }
+                            data-aos="slide-left" data-aos-delay="300"
                         >
                             Home
                         </NavLink>
+
                         <NavLink
-                            to="#"
+                            to="/about"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
                             }
+                            data-aos="slide-left" data-aos-delay="300"
                         >
                             About
                         </NavLink>
+
                         <NavLink
-                            to="#"
+                            to="/portfolio"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
                             }
+                            data-aos="slide-left" data-aos-delay="300"
                         >
-                            Products
+                            Portfolio
                         </NavLink>
+
                         <NavLink
-                            to="#"
+                            to="/services"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
                             }
+                            data-aos="slide-left" data-aos-delay="300"
                         >
                             Services
                         </NavLink>
+
                         <NavLink
-                            to="#"
+                            to="/furnitureDesign"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "nav-link-active"
-                                    : "nav-link"
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
                             }
+                            data-aos="slide-left" data-aos-delay="300"
+                        >
+                            Furniture Design
+                        </NavLink>
+
+                        <NavLink
+                            to="/realEstate"
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
+                            }
+                            data-aos="slide-left" data-aos-delay="300"
+                        >
+                            Real Estate
+                        </NavLink>
+
+                        <NavLink
+                            to="/promotors"
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
+                            }
+                            data-aos="slide-left" data-aos-delay="300"
+                        >
+                            Promotors
+                        </NavLink>
+
+                        <NavLink
+                            to="/contact"
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "nav-link-active pb-1"
+                                    : "nav-link pb-1"
+                            }
+                            data-aos="slide-left" data-aos-delay="300"
                         >
                             Contact
                         </NavLink>
+
                     </div>
                 </div>
             )}

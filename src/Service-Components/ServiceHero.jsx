@@ -9,11 +9,11 @@ const ServiceHero = () => {
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-black"></div>
 
                 <div className="w-full absolute inset-0 bg-cover bg-center  "
-                    style={{ backgroundImage: `url(${Bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.9 }}
+                    style={{ backgroundImage: `url(${Bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.5 }}
                 ></div>
 
                 <div className='relative text-white text-center '>
-                    <h2 className='text-6xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}><span className="text-white" style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}>Our</span> Services</h2>
+                    <h2 className='text-5xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Audiowide", textShadow: "2px 4px 0px black" }}><span className="text-white" >Our</span> Services</h2>
                 </div>
 
             </section>

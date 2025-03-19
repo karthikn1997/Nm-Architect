@@ -24,7 +24,7 @@ const Home = () => {
       <Ideas />
       {/* <About /> */}
       {/* <Future /> */}
-      <HomeService />
+      {/* <HomeService /> */}
       {/* <Projects /> */}
       <HomePortfolio />
       <ContactForm />

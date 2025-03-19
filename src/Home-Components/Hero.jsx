@@ -38,7 +38,7 @@ const Hero = () => {
         ></div>
 
         <div className='relative w-full mx-auto min-h-[100vh] px-8 pt-10 lg:pt-[200px] flex flex-col justify-center items-center z-10'>
-          <h1 className="text-3xl text-border sm:text-4xl lg:text-7xl text-black font-bold mb-4 text-center lg:text-left" data-aos="slide-right" data-aos-delay="300" style={{fontFamily: "Allura"}}>
+          <h1 className="text-3xl sm:text-3xl lg:text-4xl text-gold font-semibold mb-4 text-center lg:text-left italic " data-aos="slide-right" data-aos-delay="300" style={{fontFamily: "Orbitron" , textShadow: "2px 2px 0px black"}}>
             <Typewriter
               words={[
                 "Turn Your Dream Plot Into Reality",
@@ -56,11 +56,7 @@ const Hero = () => {
           <p className="text-sm lg:text-xl tracking-wider text-gray-300 mb-4 md:mb-8 text-center lg:text-left font-bitter" data-aos="slide-left" data-aos-delay="300">
             We're glad you're here. Discover amazing plots and join our community!
           </p>
-          {/* <button className="bg-gradient-to-r from-[#ece9e55c] via-[#26282b73] to-black hover:bg-gradient-to-l text-white font-semibold py-2 sm:py-3 px-8 rounded-lg transition duration-300 border-b border-e-2 border-gold whitespace-nowrap " data-aos="flip-left" data-aos-delay="300">
-            <div className='flex items-center gap-3 font-bold text-xl text-white hover:text-black'>
-              <span className='text-lg lg:text-2xl text-white'>Explore Now</span><span className='text-2xl animate-bounce'><FaRegArrowAltCircleDown className='text-gray-300' /></span>
-            </div>
-          </button> */}
+          
           <Counters />
         </div>
 

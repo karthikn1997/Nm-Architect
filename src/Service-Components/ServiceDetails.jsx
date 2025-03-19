@@ -1,43 +1,42 @@
 import React from 'react'
-import img from "../assets/hero.jpg"
-import { PiBuildingApartment } from "react-icons/pi";
-import { PiBuildings } from "react-icons/pi";
-import { TbHomeStats } from "react-icons/tb";
-import { TiHomeOutline } from "react-icons/ti";
-import { FaLaptopHouse } from "react-icons/fa";
+import { PiBuildingOfficeThin } from "react-icons/pi";
+import { PiBuildingApartmentThin } from "react-icons/pi";
+import { PiBuildingsThin } from "react-icons/pi";
+import { PiHouseLineThin } from "react-icons/pi";
+import { PiSelectionForegroundThin } from "react-icons/pi";
+import { PiKeyThin } from "react-icons/pi";
 
 const ServiceDetails = () => {
     return (
         <div className='w-full min-h-screen flex flex-col justify-center items-center py-10'>
-            <h2 className='text-white text-5xl font-semibold tracking-widest mb-16'>Expertise Services</h2>
+            <h2 className='text-white text-4xl font-extralight tracking-widest mb-16' style={{ fontFamily: "Orbitron" }}>Expertise Services</h2>
 
             <div className='w-[90%] flex flex-col justify-center items-center gap-10'>
 
                 <div className='w-full flex justify-between items-center '>
 
-
                     <div className='w-[50%] min-h-80 border-r border-b border-gold flex justify-center items-center'>
-                        <PiBuildingApartment className='h-48 w-48 text-gray-400 opacity-60' />
+                        <PiBuildingOfficeThin className='h-48 w-48 text-gray-400 opacity-60' />
                     </div>
 
                     <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 px-10' >
 
                         <span
-                            className='text-9xl font-bold text-gold'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-7xl  text-gold'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             01
                         </span>
 
                         <h2
-                            className='text-5xl font-bold text-white mb-8 uppercase tracking-widest'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-4xl  text-white mb-8  tracking-widest'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             Landscape Architecture
                         </h2>
 
-                        <div className='grid grid-cols-2'>
-                            <span>Functional Kitchens</span>
+                        <div className='grid grid-cols-2 italic'>
+                            <span>Site Planning </span>
                             <span>Residential Space</span>
                             <span>Structural Design</span>
                             <span>Construction Plan</span>
@@ -53,31 +52,32 @@ const ServiceDetails = () => {
                     <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 px-10 text-right' >
 
                         <span
-                            className='text-9xl font-bold text-gold'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-7xl  text-gold'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             02
                         </span>
 
                         <h2
-                            className='text-5xl font-bold text-white mb-8 uppercase tracking-widest'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-4xl text-white mb-8 tracking-widest'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             Architectural Design
                         </h2>
 
-                        <div className='grid grid-cols-2'>
-                            <span>construction drawings</span>
-                            <span>Residential Space</span>
+                        <div className='grid grid-cols-2 italic'>
+                            <span>Construction Drawings</span>
+                            <span>Space Planning</span>
                             <span>Design Development</span>
-                            <span>Development approval</span>
-                            <span>Residential Space</span>
-                            <span>Concept design</span>
+                            <span>Building Approvals</span>
+                            <span>Structural Design</span>
+                            <span>Conceptual Design</span>
                         </div>
+
                     </div>
 
                     <div className='w-[50%] min-h-80  border-l border-b border-gold flex justify-center items-center'>
-                        <PiBuildings className='h-48 w-48 text-gray-400 opacity-60' />
+                        <PiBuildingApartmentThin className='h-48 w-48 text-gray-400 opacity-60' />
                     </div>
 
                 </div>
@@ -86,26 +86,26 @@ const ServiceDetails = () => {
 
 
                     <div className='w-[50%] min-h-80 border-r border-b border-gold flex justify-center items-center'>
-                        <TbHomeStats className='h-48 w-48 text-gray-400 opacity-60' />
+                        <PiHouseLineThin className='h-48 w-48 text-gray-400 opacity-60' />
                     </div>
 
                     <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 px-10' >
 
                         <span
-                            className='text-9xl font-bold text-gold'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-7xl  text-gold'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             03
                         </span>
 
                         <h2
-                            className='text-5xl font-bold text-white mb-8 uppercase tracking-widest'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-4xl  text-white mb-8  tracking-widest'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             Interior Design
                         </h2>
 
-                        <div className='grid grid-cols-2'>
+                        <div className='grid grid-cols-2 italic'>
                             <span>Furniture designed</span>
                             <span>furniture consulting</span>
                             <span>interior construction</span>
@@ -121,31 +121,32 @@ const ServiceDetails = () => {
                     <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 px-10 text-right' >
 
                         <span
-                            className='text-9xl font-bold text-gold'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-7xl  text-gold'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             04
                         </span>
 
                         <h2
-                            className='text-5xl font-bold text-white mb-8 uppercase tracking-widest'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-4xl text-white mb-8 tracking-widest'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             Residential Renovation
                         </h2>
 
-                        <div className='grid grid-cols-2'>
-                            <span>Functional Kitchens</span>
-                            <span>Residential Space</span>
-                            <span>Structural Design</span>
-                            <span>Construction Plan</span>
-                            <span>Landscape Architecture</span>
-                            <span>Project Analysis</span>
+                        <div className='grid grid-cols-2 italic'>
+                            <span>Kitchen Remodeling</span>
+                            <span>Living Space Enhancement</span>
+                            <span>Structural Modifications</span>
+                            <span>Ceiling Upgrades</span>
+                            <span>Interior Finishes </span>
+                            <span>Exterior Finishes</span>
                         </div>
+
                     </div>
 
                     <div className='w-[50%] min-h-80  border-l border-b border-gold flex justify-center items-center'>
-                        <TiHomeOutline className='h-48 w-48 text-gray-400 opacity-60' />
+                        <PiBuildingsThin className='h-48 w-48 text-gray-400 opacity-60' />
                     </div>
 
                 </div>
@@ -154,33 +155,70 @@ const ServiceDetails = () => {
 
 
                     <div className='w-[50%] min-h-80 border-r border-b border-gold flex justify-center items-center'>
-                        <FaLaptopHouse className='h-48 w-48 text-gray-400 opacity-60' />
+                        <PiSelectionForegroundThin className='h-48 w-48 text-gray-400 opacity-60' />
                     </div>
 
                     <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 px-10' >
 
                         <span
-                            className='text-9xl font-bold text-gold'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-7xl  text-gold'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             05
                         </span>
 
                         <h2
-                            className='text-5xl font-bold text-white mb-8 uppercase tracking-widest'
-                            style={{ fontFamily: "Smooch Sans", textShadow: "2px 4px 0px black" }}
+                            className='text-4xl text-white mb-8 tracking-widest'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
                         >
                             Project Consultant
                         </h2>
 
-                        <div className='grid grid-cols-2'>
-                            <span>Functional Kitchens</span>
-                            <span>Residential Space</span>
-                            <span>Structural Design</span>
-                            <span>Construction Plan</span>
-                            <span>Landscape Architecture</span>
-                            <span>Project Analysis</span>
+                        <div className='grid grid-cols-2 italic'>
+                            <span>Project Planning</span>
+                            <span>Design Strategy</span>
+                            <span>Risk Management</span>
+                            <span>Cost Estimation</span>
+                            <span>Quality Control</span>
+                            <span>Site Supervision</span>
                         </div>
+
+                    </div>
+
+                </div>
+
+                <div className='w-full flex justify-between items-center '>
+
+                    <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 px-10 text-right' >
+
+                        <span
+                            className='text-7xl  text-gold'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                        >
+                            06
+                        </span>
+
+                        <h2
+                            className='text-4xl text-white mb-8 tracking-widest'
+                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                        >
+                            Turnkey Projects
+                        </h2>
+
+                        <div className='grid grid-cols-2 italic'>
+                            <span>Project Planning</span>
+                            <span>Design & Development</span>
+                            <span>Procurement</span>
+                            <span>Construction Management</span>
+                            <span>Quality Assurance</span>
+                            <span>Final Handover</span>
+                        </div>
+
+
+                    </div>
+
+                    <div className='w-[50%] min-h-80  border-l border-b border-gold flex justify-center items-center'>
+                        <PiKeyThin className='h-48 w-48 text-gray-400 opacity-60' />
                     </div>
 
                 </div>
