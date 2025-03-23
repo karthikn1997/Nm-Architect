@@ -13,8 +13,8 @@ const AboutHero = () => {
                 ></div>
 
                 <div className='text-white text-center'>
-                    <p className='text-xl text-gold uppercase mb-2'>Who We Are ?</p>
-                    <h2 className='text-5xl tracking-widest text-gold uppercase font-extrabold' style={{ fontFamily: "Megrim" }}><span className="text-white uppercase" style={{ fontFamily: "Megrim" }}>NM Square</span> Architecture</h2>
+                    <p className='text-xl text-gold uppercase mb-6'>Who We Are ?</p>
+                    <h2 className='text-6xl tracking-widest text-[#fae4af] uppercase' style={{ fontFamily: "Cr" }}><span className="text-white uppercase" style={{ fontFamily: "Cr" }}>NM Square</span> Architecture</h2>
                 </div>
 
             </section>

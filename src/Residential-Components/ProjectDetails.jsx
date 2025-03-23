@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import projects from "./ProjectDataForRes"; // Import the projects array
-import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
-import { IoIosArrowForward } from "react-icons/io";
-import { RiArrowLeftDoubleFill } from "react-icons/ri";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
 
 const ProjectDetails = () => {
     const { projectName } = useParams();
     const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     // Find the selected project
     const project = projects.find((p) => p.name === decodeURIComponent(projectName));
@@ -18,8 +18,7 @@ const ProjectDetails = () => {
         return <h2 className="text-center text-red-500">Project Not Found</h2>;
     }
 
-    const openLightbox = (index) => {
-        setCurrentImageIndex(index);
+    const openLightbox = () => {
         setIsLightboxOpen(true);
     };
 
@@ -27,101 +26,105 @@ const ProjectDetails = () => {
         setIsLightboxOpen(false);
     };
 
-    const showPrevious = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex > 0 ? prevIndex - 1 : project.images.length - 1
-        );
-    };
-
-    const showNext = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex < project.images.length - 1 ? prevIndex + 1 : 0
-        );
-    };
-
-    // Add keyboard controls
     useEffect(() => {
-        const handleKeyDown = (event) => {
-            if (isLightboxOpen) {
-                if (event.key === 'ArrowLeft') {
-                    showPrevious();
-                } else if (event.key === 'ArrowRight') {
-                    showNext();
-                } else if (event.key === 'Escape') {
-                    closeLightbox();
-                }
-            }
-        };
-
-        window.addEventListener('keydown', handleKeyDown);
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-        };
-    }, [isLightboxOpen]); // Dependency on `isLightboxOpen`
-
+        // Ensure Swiper can find the navigation buttons after rendering
+        const swiperInstance = document.querySelector('.swiper').swiper;
+        if (swiperInstance) {
+            swiperInstance.navigation.init();
+            swiperInstance.navigation.update();
+        }
+    }, []);
 
     return (
         <div className="w-full h-auto p-6">
-
-            <div className="relative w-[90%] h-[400px] mx-auto corner-border ">
-
-                <img src={project.img} alt="" className="w-full h-full mx-auto object-cover " />
-
+            <div className="relative w-[85%] h-[400px] mx-auto corner-border">
+                <img src={project.img} alt="" className="w-full h-full mx-auto object-cover opacity-40" />
                 <div className="absolute w-full h-full top-0 bg-black bg-opacity-40 flex flex-col justify-center items-center">
                     <div className='w-full bg-black bg-opacity-50 px-4 py-2'>
-                        <h1 className=" text-4xl text-center text-white uppercase tracking-wider" style={{ fontFamily: "Audiowide" }}>{project.name}</h1>
-                        <p className="text-2xl text-center text-gold font-semibold uppercase">{project.location}</p>
+                        <h1 className="text-4xl text-center text-white uppercase tracking-widest">{project.name}</h1>
+                        <p className="text-xl text-center text-gold font-semibold uppercase tracking-widest">{project.location}</p>
                     </div>
                 </div>
-
-                <div className='absolute w-full bottom-2 left-2 flex items-center text-lg text-gray-200 bg-black bg-opacity-50 px-8 py-2 z-20 tracking-wider '>
-                    <a href="/portfolio/residential" className=''>Residential Projects</a>
-                    <IoIosArrowForward className='mt-1' />
+                <div className='absolute w-full bottom-2 left-2 flex items-center text-lg text-gray-200 bg-black bg-opacity-50 px-8 py-2 z-20 tracking-wider'>
+                    <a href="/portfolio/residential">Residential Projects</a>
+                    <span className="mx-2">/</span>
                     <span>{project.name}</span>
                 </div>
             </div>
 
-            <div className="w-[90%] mx-auto grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-4 sm:my-8">
-                {project.images.map((img, index) => (
-                    <div key={index}>
-                        <img
-                            onClick={() => openLightbox(index)}
-                            src={img} alt={`Project Image ${index}`}
-                            className="w-full h-[250px] object-cover mt-4" />
-                    </div>
-                ))}
+            <div className="relative w-[95%] mx-auto my-4 sm:my-20 z-50">
+                <div className="swiper-button-prev text-white"></div>
+                <div className="swiper-button-next text-white"></div>
+                <div className="absolute -bottom-20 swiper-pagination"></div>
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    navigation={{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }}
+                    pagination={{
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    }}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    loop={true}
+                    className="w-full h-[520px] flex justify-center items-center"
+                >
+                    {project.images.map((img, index) => (
+                        <SwiperSlide key={index}>
+                            <img
+                                src={img}
+                                alt={`Project Image ${index}`}
+                                className="w-[90%] h-[480px] object-cover mx-auto"
+                                onClick={openLightbox}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+
+                {/* Add this custom styling */}
+                <style>
+                    {`
+                    .swiper-pagination-bullet {
+                      background-color: white !important;
+                    }
+                    .swiper-pagination-bullet-active {
+                     background-color: white !important;
+                   } 
+                   `}
+                </style>
+
             </div>
 
             {isLightboxOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-                    <div className="w-[80%] sm:w-auto mx-auto relative">
-                        <button
-                            onClick={closeLightbox}
-                            className="absolute -top-7 -right-7 sm:-top-10 sm:-right-10 text-white p-1 px-3 sm:text-2xl"
-                        >
-                            ✕
-                        </button>
-                        <button
-                            onClick={showPrevious}
-                            className="absolute -left-5 sm:-left-9 top-1/2 transform -translate-y-1/2 text-white sm:text-3xl"
-                        >
-                            <MdArrowBackIos />
-                        </button>
-                        <img
-                            src={project.images[currentImageIndex]}
-                            alt={`Image ${currentImageIndex + 1}`}
-                            className=" max-h-[80vh] object-contain"
-                        />
-                        <button
-                            onClick={showNext}
-                            className="absolute -right-5 sm:-right-9 top-1/2 transform -translate-y-1/2 text-white sm:text-3xl"
-                        >
-                            <MdArrowForwardIos />
-                        </button>
-                    </div>
+                <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+                    <button
+                        onClick={closeLightbox}
+                        className="absolute top-5 right-5 text-white text-2xl"
+                    >
+                        ✕
+                    </button>
+                    <Swiper
+                        modules={[Navigation, Pagination]}
+                        navigation
+                        pagination={{ clickable: true }}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        className="w-[80%] h-[80vh]"
+                    >
+                        {project.images.map((img, index) => (
+                            <SwiperSlide key={index}>
+                                <img
+                                    src={img}
+                                    alt={`Lightbox Image ${index}`}
+                                    className="w-full h-full object-contain"
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             )}
-
         </div>
     );
 };

@@ -21,8 +21,8 @@ const HomeService = () => {
                 style={{ backgroundImage: `url(${ServiceBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", opacity: 0.3 }}
             ></div> */}
 
-            <div className='relative w-[95%] p-8 mx-auto min-h-screen flex justify-center items-center gap-10 z-50'>
-                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 border-r border-t border-b border-gold'>
+            <div className='relative w-[95%] p-8 mx-auto min-h-screen flex justify-center items-center gap-10 z-50 leading-8'>
+                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-14 border-r border-t border-b border-gold py-16'>
                     <div className='w-[70%] flex flex-col justify-center items-end text-gray-300 text-right '>
                         <PiBuildingOfficeLight
                             className="w-20 h-20 text-gray-400 mb-2"
@@ -31,7 +31,7 @@ const HomeService = () => {
                                 WebkitMaskImage: "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
                             }}
                         />
-                        <h2 className='text-3xl  text-[#fae4af]' style={{ fontFamily: "Rolland" }}>Architecture</h2>
+                        <h2 className='text-2xl  text-gold' >Architecture</h2>
                         <p className='text-gray-400 text-md'>Residences | Apartments | Commercial | Offices | Institutions | Hospitals | Resorts | Industries</p>
                     </div>
                     <div className='w-[70%] flex flex-col justify-center items-end text-gray-300 text-right'>
@@ -41,7 +41,7 @@ const HomeService = () => {
                                 WebkitMaskImage: "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
                             }}
                         />
-                        <h2 className='text-3xl  text-[#fae4af]' style={{ fontFamily: "Rolland" }}>Interior Design</h2>
+                        <h2 className='text-2xl  text-gold' >Interior Design</h2>
                         <p className='text-gray-400 text-md'>Residences | Apartments | Villas | Offices | Retail | Hospitality | Commercial | Healthcare</p>
                     </div>
                     <div className='w-[70%] flex flex-col justify-center items-end text-gray-300 text-right'>
@@ -51,11 +51,11 @@ const HomeService = () => {
                                 WebkitMaskImage: "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
                             }}
                         />
-                        <h2 className='text-3xl  text-[#fae4af]' style={{ fontFamily: "Rolland" }}>Master planning</h2>
+                        <h2 className='text-2xl  text-gold' >Master planning</h2>
                         <p className='text-gray-400 text-md'>Townships | Sports Complexes | Campus Planning | Large Scale Hospitals | Public Buildings</p>
                     </div>
                 </div>
-                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-8 border-l border-t border-b border-gold'>
+                <div className='w-[50%] min-h-screen flex flex-col justify-center items-center gap-14 border-l border-t border-b border-gold py-16'>
                     <div className='w-[70%] flex flex-col justify-center items-start text-gray-300 text-left'>
                         <TbUsersGroup className="w-20 h-20 text-gray-400 mb-2"
                             style={{
@@ -63,7 +63,7 @@ const HomeService = () => {
                                 WebkitMaskImage: "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
                             }}
                         />
-                        <h2 className='text-3xl  text-[#fae4af]' style={{ fontFamily: "Rolland" }}>Project Management</h2>
+                        <h2 className='text-2xl  text-gold' >Project Management</h2>
                         <p className='text-gray-400 text-md'>Construction Management | Contract Management | Liasoning | Scheduling | Quality Control</p>
                     </div>
                     <div className='w-[70%] flex flex-col justify-center items-start text-gray-300 text-left'>
@@ -73,7 +73,7 @@ const HomeService = () => {
                                 WebkitMaskImage: "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
                             }}
                         />
-                        <h2 className='text-3xl  text-[#fae4af]' style={{ fontFamily: "Rolland" }}>Art and Graphic Design</h2>
+                        <h2 className='text-2xl  text-gold' >Art and Graphic Design</h2>
                         <p className='text-gray-400 text-md'>Graphic Design | Artworks Design | Art Installations | Sculpture | Illustrations | Interior Graphics</p>
                     </div>
                     <div className='w-[70%] flex flex-col justify-center items-start text-gray-300 text-left'>
@@ -83,7 +83,7 @@ const HomeService = () => {
                                 WebkitMaskImage: "-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))"
                             }}
                         />
-                        <h2 className='text-3xl text-[#fae4af]' style={{ fontFamily: "Rolland" }}>Landscape Design</h2>
+                        <h2 className='text-2xl text-gold' >Landscape Design</h2>
                         <p className='text-gray-400 text-md'>Residential | Institutional | Campus | Commercial | Indoor | Recreational | Public Spaces</p>
                     </div>
                 </div>

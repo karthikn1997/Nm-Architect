@@ -49,7 +49,7 @@ const ContactForm = () => {
 
     return (
         <div>
-            <div className="w-[95%] md:w-[90%] xl:w-[85%] mx-auto flex flex-col-reverse lg:flex-row justify-center items-start rounded-sm shadow-md p-4 sm:p-6 md:p-16 my-6 sm:my-10 gap-4 sm:gap-10 border border-gold border-opacity-40">
+            <div className="w-[95%] md:w-[90%] xl:w-[85%] mx-auto flex flex-col-reverse lg:flex-row justify-center items-start rounded-sm shadow-md p-4 sm:p-6 md:p-16 my-6 sm:my-10 gap-4 sm:gap-10 border border-gold">
                 {/* Toast Notification Container */}
                 <ToastContainer
                     position="top-center"

@@ -28,10 +28,10 @@ function Footer() {
                 {/* Shining Top Border */}
                 <div className="absolute -top-1 left-0 w-[70%] h-[1px] animate-shine "></div>
 
-                <div className="relative z-50 w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px] ">
+                <div className="relative z-10 w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px] ">
                     {/* Clinic Overview */}
                     <div className="w-full flex flex-col items-center mb-12" data-aos="fade-right">
-                        <h2 className='text-5xl uppercase tracking-widest text-[#fae4af] mb-2' style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px #fae4af" }}><span className="text-white" style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px white" }}>Nm Square</span> Architecture</h2>
+                        <h2 className='text-5xl uppercase tracking-widest text-[#fae4af] mb-2' style={{ fontFamily: "Rolland" }}><span className="text-white" style={{ fontFamily: "Rolland" }}>Nm Square</span> Architecture</h2>
                        
                         <p className="text-center text-sm tracking-widest text-gold">
                             Build Your Future with Our Plots

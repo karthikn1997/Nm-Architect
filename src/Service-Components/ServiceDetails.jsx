@@ -9,7 +9,7 @@ import { PiKeyThin } from "react-icons/pi";
 const ServiceDetails = () => {
     return (
         <div className='w-full min-h-screen flex flex-col justify-center items-center py-10'>
-            <h2 className='text-white text-4xl font-extralight tracking-widest mb-16' style={{ fontFamily: "Orbitron" }}>Expertise Services</h2>
+            {/* <h2 className='text-white text-6xl font-extralight tracking-widest mb-16' style={{ fontFamily: "" }}>Expertise Services</h2> */}
 
             <div className='w-[90%] flex flex-col justify-center items-center gap-10'>
 
@@ -23,14 +23,14 @@ const ServiceDetails = () => {
 
                         <span
                             className='text-7xl  text-gold'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             01
                         </span>
 
                         <h2
                             className='text-4xl  text-white mb-8  tracking-widest'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Landscape Architecture
                         </h2>
@@ -53,14 +53,14 @@ const ServiceDetails = () => {
 
                         <span
                             className='text-7xl  text-gold'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             02
                         </span>
 
                         <h2
                             className='text-4xl text-white mb-8 tracking-widest'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Architectural Design
                         </h2>
@@ -93,14 +93,14 @@ const ServiceDetails = () => {
 
                         <span
                             className='text-7xl  text-gold'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             03
                         </span>
 
                         <h2
                             className='text-4xl  text-white mb-8  tracking-widest'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Interior Design
                         </h2>
@@ -122,14 +122,14 @@ const ServiceDetails = () => {
 
                         <span
                             className='text-7xl  text-gold'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             04
                         </span>
 
                         <h2
                             className='text-4xl text-white mb-8 tracking-widest'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Residential Renovation
                         </h2>
@@ -162,14 +162,14 @@ const ServiceDetails = () => {
 
                         <span
                             className='text-7xl  text-gold'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             05
                         </span>
 
                         <h2
                             className='text-4xl text-white mb-8 tracking-widest'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Project Consultant
                         </h2>
@@ -193,14 +193,14 @@ const ServiceDetails = () => {
 
                         <span
                             className='text-7xl  text-gold'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             06
                         </span>
 
                         <h2
                             className='text-4xl text-white mb-8 tracking-widest'
-                            style={{ fontFamily: "Orbitron", textShadow: "2px 4px 0px black" }}
+                            style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Turnkey Projects
                         </h2>

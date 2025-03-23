@@ -15,12 +15,12 @@ const Contact = () => {
         ></div>
 
         <div className='relative text-white text-center '>
-          <h2 className='text-6xl uppercase font-extrabold tracking-widest text-gold' style={{ fontFamily: "Wallpoet", textShadow: "2px 4px 0px black" }}><span className="text-gray-300" >Contact</span> Us</h2>
+          <h2 className='text-6xl uppercase tracking-widest text-white' style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px gray" }}>Contact Us</h2>
         </div>
 
       </section>
 
-      <div className='relative -mt-[150px] z-50'>
+      <div className='relative -mt-[100px] z-50'>
         <ContactForm />
       </div>
 

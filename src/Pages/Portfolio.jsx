@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Bg from "../assets/c1.jpg"
+import Bg from "../assets/pt.jpg"
 
 const Portfolio = () => {
     return (
@@ -15,10 +15,10 @@ const Portfolio = () => {
 
                     <div className='relative w-[80%] mt-20 bg-black bg-opacity-30 px-4 rounded-lg corner-border flex flex-col justify-center items-center'>
                         <div className='relative w-full text-white text-center mb-6'>
-                            <h2 className='text-6xl uppercase font-bold tracking-widest text-gold' style={{ fontFamily: "Foldit", textShadow: "1px 1px 0px white" }}><span className="text-white" >Architecture</span> Portfolio</h2>
+                            <h2 className='text-6xl uppercase tracking-widest text-gold' style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px gray" }}><span className="text-white" >Architecture</span> <span style={{ textShadow: "1px 1px 0px #fae4af" }}>Portfolio</span></h2>
                         </div>
 
-                        <div className='relative z-10 flex justify-center items-center gap-6 text-2xl cursor-pointer tracking-wider text-gold' style={{ fontFamily: "Orbitron" }}>
+                        <div className='relative z-10 flex justify-center items-center gap-6 text-2xl cursor-pointer tracking-wider text-gold' >
                             <Link
                                 to='/portfolio/commercial'
                                 className='cursor-pointer py-2 px-4 rounded border border-gray-500 hover:text-white hover:scale-[1.02] transition-all duration-500'
