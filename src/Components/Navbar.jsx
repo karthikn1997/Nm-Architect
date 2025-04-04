@@ -37,64 +37,17 @@ const Navbar = () => {
 
     return (
         <nav className="relative z-50 top-0" data-aos="slide-down" data-aos-delay="300">
-            <div className="w-[85%] mx-auto px-8 z-50">
+            <div className="w-full sm:w-[85%] mx-auto px-8 z-50">
                 <div className="flex items-center py-1">
                     <div className="flex items-center justify-between gap-10 w-full ">
                         <div className="flex-shrink-0 text-white">
                             <img
                                 src={logo}
                                 alt="Logo"
-                                className="w-[70px] lg:w-[150px] "
+                                className="w-[90px] lg:w-[150px] "
                             />
                         </div>
-                        <div className="hidden font-extralight text-[16px] tracking-wider">
-                            <div className="flex items-baseline space-x-8" style={{ fontFamily: "Orbitron" }}>
-                                <NavLink
-                                    to="/"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
-                                    Home
-                                </NavLink>
-
-                                <NavLink
-                                    to="/about"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
-                                    About
-                                </NavLink>
-
-                                <NavLink
-                                    to="/services"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
-                                    Services
-                                </NavLink>
-
-                                <NavLink
-                                    to="/contact"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "nav-link-active"
-                                            : "nav-link"
-                                    }
-                                >
-                                    Contact
-                                </NavLink>
-
-                            </div>
-                        </div>
+                    
                     </div>
                     <div className="-mr-2 flex z-50 ">
                         <button
@@ -104,7 +57,7 @@ const Navbar = () => {
                             {!isOpen ? (
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-10 w-10"
+                                    className="h-8 sm:h-10 w-8 sm:w-10"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
@@ -119,7 +72,7 @@ const Navbar = () => {
                             ) : (
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-10 w-10"
+                                    className="h-8 sm:h-10 w-8 sm:w-10"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
@@ -138,10 +91,12 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className="absolute min-h-screen w-[40%] right-0 top-0 flex justify-center items-center bg-black bg-opacity-80 " data-aos="slide-left" >
-                    <div className="px-10 py-2 pb-4 flex flex-col gap-8 tracking-wider " style={{ fontFamily: "Orbitron" }}>
+                <div className="absolute min-h-screen w-full sm:w-[40%] right-0 top-0 flex justify-center items-center bg-black bg-opacity-80 " data-aos="slide-left" >
+                    <div className="px-10 py-2 pb-4 flex flex-col gap-4 sm:gap-8 tracking-wider " style={{ fontFamily: "Orbitron" }}>
                         <NavLink
                             to="/"
+                            
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"
@@ -154,6 +109,7 @@ const Navbar = () => {
 
                         <NavLink
                             to="/about"
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"
@@ -166,6 +122,7 @@ const Navbar = () => {
 
                         <NavLink
                             to="/portfolio"
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"
@@ -178,6 +135,7 @@ const Navbar = () => {
 
                         <NavLink
                             to="/services"
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"
@@ -190,6 +148,7 @@ const Navbar = () => {
 
                         <NavLink
                             to="/furnitureDesign"
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"
@@ -202,6 +161,7 @@ const Navbar = () => {
 
                         <NavLink
                             to="/realEstate"
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"
@@ -214,6 +174,7 @@ const Navbar = () => {
 
                         <NavLink
                             to="/promotors"
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"
@@ -226,6 +187,7 @@ const Navbar = () => {
 
                         <NavLink
                             to="/contact"
+                            onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
                                 isActive
                                     ? "nav-link-active pb-1"

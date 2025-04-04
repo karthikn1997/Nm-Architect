@@ -2,7 +2,6 @@ import React from 'react';
 import Bg from "../assets/cont.png"
 import ContactForm from '../Contact-component/ContactForm';
 
-
 const Contact = () => {
 
   return (

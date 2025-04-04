@@ -11,7 +11,7 @@ const HomePortfolio = () => {
     return (
         <div className='w-full min-h-screen -mt-20'>
             
-            <section className="relative min-h-[100vh] w-full flex flex-col items-center justify-start hero-section gap-8 lg:gap-4 py-8 overflow-hidden">
+            <section className="relative min-h-[100vh] w-full flex flex-col items-center justify-start hero-section gap-8 lg:gap-4 sm:py-8 overflow-hidden">
                 <div className="absolute inset-0 z-10 bg-gradient-to-b from-black via-transparent to-black"></div>
 
                 <div className="w-full absolute inset-0 bg-cover bg-center  "
@@ -19,7 +19,7 @@ const HomePortfolio = () => {
                 ></div>
 
 
-                <div className='relative w-[90%] mx-auto flex flex-col mt-20 z-50'>
+                <div className='relative w-[90%] mx-auto flex flex-col sm:mt-20 z-50'>
 
                     <div className="w-full mx-auto relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 sm:p-8 gap-4 sm:gap-20 my-10 text-center z-50">
 

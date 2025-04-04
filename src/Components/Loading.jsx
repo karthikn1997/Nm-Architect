@@ -1,23 +1,26 @@
 import React from "react";
-import text from "../assets/nmtext.jpeg";
+import Lottie from "lottie-react";
+import loadingAnimation from "../../public/load.json"
 
 const Loading = () => {
   return (
-    <div className="loading-container">
-      
-      {/* Rotating 3D Architectural Cube */}
-
-      <div className="cube mb-12">
-        <div className="face front"></div>
-        <div className="face back"></div>
-        <div className="face left"></div>
-        <div className="face right"></div>
-        <div className="face top"></div>
-        <div className="face bottom"></div>
+    <div className="flex items-center justify-center min-h-screen bg-black">
+      <div className="flex items-center justify-center -ml-[150px]">
+        <Lottie
+          animationData={loadingAnimation}
+          loop={true}
+          className="relative z-10"
+          style={{ width: 500, height: 500 }}
+        />
+        <div className="-ml-[150px]">
+          <h2
+            className='flex flex-col text-5xl uppercase tracking-widest'
+          >
+            <span className="text-white" style={{ fontFamily: "Rolland" }}>Nm Square</span>
+            <span className="text-[#fae4af]" style={{ fontFamily: "Rolland" }}>Architecture</span>
+          </h2>
+        </div>
       </div>
-
-      {/* Loading Text */}
-      <img src={text} alt="" className="w-72"/>
     </div>
   );
 };
