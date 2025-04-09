@@ -16,7 +16,7 @@ const HomeService = () => {
 
             <div className="relative w-[95%] p-2 sm:p-8 mx-auto min-h-screen flex flex-col lg:flex-row justify-center items-center gap-10 z-50 leading-8">
                 {/* Left Column */}
-                <div className="w-full lg:w-[50%] min-h-screen flex flex-col justify-center items-center gap-14 border-r border-t border-b border-gold py-16">
+                <div className="w-full lg:w-[50%] min-h-screen flex flex-col justify-center items-center gap-14 border-r border-t border-b border-gold sm:py-16">
                     <div className="w-[90%] lg:w-[70%] flex flex-col justify-center items-end text-gray-300 text-right">
                         <PiBuildingOfficeLight
                             className="w-16 h-16 lg:w-20 lg:h-20 text-gray-400 mb-2"
@@ -59,7 +59,7 @@ const HomeService = () => {
                 </div>
 
                 {/* Right Column */}
-                <div className="w-full lg:w-[50%] min-h-screen flex flex-col justify-center items-center gap-14 border-l border-t border-b border-gold py-16">
+                <div className="w-full lg:w-[50%] min-h-screen flex flex-col justify-center items-center gap-14 border-l border-t border-b border-gold sm:py-16">
                     <div className="w-[90%] lg:w-[70%] flex flex-col justify-center items-start text-gray-300 text-left">
                         <TbUsersGroup
                             className="w-16 h-16 lg:w-20 lg:h-20 text-gray-400 mb-2"

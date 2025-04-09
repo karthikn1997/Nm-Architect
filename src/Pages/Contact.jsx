@@ -14,7 +14,7 @@ const Contact = () => {
         ></div>
 
         <div className='relative text-white text-center '>
-          <h2 className='text-6xl uppercase tracking-widest text-white' style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px gray" }}>Contact Us</h2>
+          <h2 className='text-4xl md:text-6xl uppercase tracking-widest text-white' style={{ fontFamily: "Rolland", textShadow: "1px 1px 0px gray" }}>Contact Us</h2>
         </div>
 
       </section>

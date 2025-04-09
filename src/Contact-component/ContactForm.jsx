@@ -62,8 +62,8 @@ const ContactForm = () => {
                 />
 
                 {/* Get in Touch Section */}
-                <div className="w-full lg:w-[50%] text-center lg:text-left mx-auto mt-6 lg:mt-4 pr-10">
-                    <div className='flex justify-center items-center lg:justify-start lg:items-start gap-4 mb-2 sm:mb-4'>
+                <div className="w-full lg:w-[50%] text-left mx-auto mt-6 lg:mt-4 sm:pr-10">
+                    <div className='flex justify-start items-start gap-4 mb-2 sm:mb-4'>
                         <h2 className="flex text-2xl sm:text-4xl text-white pb-1 sm:pb-2 border-b border-gold " >Get in Touch </h2><FaHandshake className='hidden lg:block w-8 h-8 sm:w-12 sm:h-12 text-gold' />
                     </div>
 

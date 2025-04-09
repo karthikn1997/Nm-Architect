@@ -13,29 +13,29 @@ const ServiceDetails = () => {
 
             <div className='w-[90%] flex flex-col justify-center items-center gap-10'>
 
-                <div className='w-full flex justify-between items-center '>
+                <div className='w-full flex flex-col-reverse lg:flex-row justify-between items-center '>
 
-                    <div className='w-[50%] min-h-80 border-r border-b border-gold flex justify-center items-center'>
-                        <PiBuildingOfficeThin className='h-48 w-48 text-gray-400 opacity-60' />
+                    <div className='w-full lg:w-[50%] lg:min-h-80 border-r border-b border-gold flex justify-center items-center'>
+                        <PiBuildingOfficeThin className='h-40 w-40 sm:h-48 sm:w-48 text-gray-400 opacity-60' />
                     </div>
 
-                    <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 px-10' >
+                    <div className='w-full lg:w-[50%] lg:min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 lg:px-10' >
 
                         <span
-                            className='text-7xl  text-gold'
+                            className='text-5xl sm:text-7xl  text-gold'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             01
                         </span>
 
                         <h2
-                            className='text-4xl  text-white mb-8  tracking-widest'
+                            className='text-3xl sm:text-4xl  text-white mb-8  tracking-widest'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Landscape Architecture
                         </h2>
 
-                        <div className='grid grid-cols-2 italic'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 italic'>
                             <span>Site Planning </span>
                             <span>Residential Space</span>
                             <span>Structural Design</span>
@@ -47,25 +47,25 @@ const ServiceDetails = () => {
 
                 </div>
 
-                <div className='w-full flex justify-between items-center '>
+                <div className='w-full flex flex-col lg:flex-row justify-between items-center '>
 
-                    <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 px-10 text-right' >
+                    <div className='w-full lg:w-[50%] lg:min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 lg:px-10 text-right' >
 
                         <span
-                            className='text-7xl  text-gold'
+                            className='text-5xl sm:text-7xl  text-gold'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             02
                         </span>
 
                         <h2
-                            className='text-4xl text-white mb-8 tracking-widest'
+                            className='text-3xl sm:text-4xl text-white mb-8 tracking-widest'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Architectural Design
                         </h2>
 
-                        <div className='grid grid-cols-2 italic'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 italic'>
                             <span>Construction Drawings</span>
                             <span>Space Planning</span>
                             <span>Design Development</span>
@@ -76,36 +76,36 @@ const ServiceDetails = () => {
 
                     </div>
 
-                    <div className='w-[50%] min-h-80  border-l border-b border-gold flex justify-center items-center'>
-                        <PiBuildingApartmentThin className='h-48 w-48 text-gray-400 opacity-60' />
+                    <div className='w-full lg:w-[50%] lg:min-h-80  border-l border-b border-gold flex justify-center items-center'>
+                        <PiBuildingApartmentThin className='h-40 w-40 sm:h-48 sm:w-48 text-gray-400 opacity-60' />
                     </div>
 
                 </div>
 
-                <div className='w-full flex justify-between items-center '>
+                <div className='w-full flex flex-col-reverse lg:flex-row justify-between items-center '>
 
 
-                    <div className='w-[50%] min-h-80 border-r border-b border-gold flex justify-center items-center'>
-                        <PiHouseLineThin className='h-48 w-48 text-gray-400 opacity-60' />
+                    <div className='w-full lg:w-[50%] lg:min-h-80 border-r border-b border-gold flex justify-center items-center'>
+                        <PiHouseLineThin className='h-40 w-40 sm:h-48 sm:w-48 text-gray-400 opacity-60' />
                     </div>
 
-                    <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 px-10' >
+                    <div className='w-full lg:w-[50%] lg:min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 lg:px-10' >
 
                         <span
-                            className='text-7xl  text-gold'
+                            className='text-5xl sm:text-7xl  text-gold'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             03
                         </span>
 
                         <h2
-                            className='text-4xl  text-white mb-8  tracking-widest'
+                            className='text-3xl sm:text-4xl  text-white mb-8  tracking-widest'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Interior Design
                         </h2>
 
-                        <div className='grid grid-cols-2 italic'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 italic'>
                             <span>Furniture designed</span>
                             <span>furniture consulting</span>
                             <span>interior construction</span>
@@ -116,25 +116,25 @@ const ServiceDetails = () => {
 
                 </div>
 
-                <div className='w-full flex justify-between items-center '>
+                <div className='w-full flex flex-col lg:flex-row justify-between items-center '>
 
-                    <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 px-10 text-right' >
+                    <div className='w-full lg:w-[50%] lg:min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 lg:px-10 text-right' >
 
                         <span
-                            className='text-7xl  text-gold'
+                            className='text-5xl sm:text-7xl  text-gold'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             04
                         </span>
 
                         <h2
-                            className='text-4xl text-white mb-8 tracking-widest'
+                            className='text-3xl sm:text-4xl text-white mb-8 tracking-widest'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Residential Renovation
                         </h2>
 
-                        <div className='grid grid-cols-2 italic'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 italic'>
                             <span>Kitchen Remodeling</span>
                             <span>Living Space Enhancement</span>
                             <span>Structural Modifications</span>
@@ -145,36 +145,36 @@ const ServiceDetails = () => {
 
                     </div>
 
-                    <div className='w-[50%] min-h-80  border-l border-b border-gold flex justify-center items-center'>
-                        <PiBuildingsThin className='h-48 w-48 text-gray-400 opacity-60' />
+                    <div className='w-full lg:w-[50%] lg:min-h-80  border-l border-b border-gold flex justify-center items-center'>
+                        <PiBuildingsThin className='h-40 w-40 sm:h-48 sm:w-48 text-gray-400 opacity-60' />
                     </div>
 
                 </div>
 
-                <div className='w-full flex justify-between items-center '>
+                <div className='w-full flex flex-col-reverse lg:flex-row justify-between items-center '>
 
 
-                    <div className='w-[50%] min-h-80 border-r border-b border-gold flex justify-center items-center'>
-                        <PiSelectionForegroundThin className='h-48 w-48 text-gray-400 opacity-60' />
+                    <div className='w-full lg:w-[50%] lg:min-h-80 border-r border-b border-gold flex justify-center items-center'>
+                        <PiSelectionForegroundThin className='h-40 w-40 sm:h-48 sm:w-48 text-gray-400 opacity-60' />
                     </div>
 
-                    <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 px-10' >
+                    <div className='w-full lg:w-[50%] lg:min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 p-5 lg:px-10' >
 
                         <span
-                            className='text-7xl  text-gold'
+                            className='text-5xl sm:text-7xl  text-gold'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             05
                         </span>
 
                         <h2
-                            className='text-4xl text-white mb-8 tracking-widest'
+                            className='text-3xl sm:text-4xl text-white mb-8 tracking-widest'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Project Consultant
                         </h2>
 
-                        <div className='grid grid-cols-2 italic'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 italic'>
                             <span>Project Planning</span>
                             <span>Design Strategy</span>
                             <span>Risk Management</span>
@@ -187,25 +187,25 @@ const ServiceDetails = () => {
 
                 </div>
 
-                <div className='w-full flex justify-between items-center '>
+                <div className='w-full flex flex-col lg:flex-row justify-between items-center '>
 
-                    <div className='w-[50%] min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 px-10 text-right' >
+                    <div className='w-full lg:w-[50%] lg:min-h-80 flex flex-col text-gold text-opacity-80 leading-10 text-xl space-y-4 tracking-wider p-5 lg:px-10 text-right' >
 
                         <span
-                            className='text-7xl  text-gold'
+                            className='text-5xl sm:text-7xl  text-gold'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             06
                         </span>
 
                         <h2
-                            className='text-4xl text-white mb-8 tracking-widest'
+                            className='text-3xl sm:text-4xl text-white mb-8 tracking-widest'
                             style={{ fontFamily: "Cr", textShadow: "2px 4px 0px black" }}
                         >
                             Turnkey Projects
                         </h2>
 
-                        <div className='grid grid-cols-2 italic'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 italic'>
                             <span>Project Planning</span>
                             <span>Design & Development</span>
                             <span>Procurement</span>
@@ -217,8 +217,8 @@ const ServiceDetails = () => {
 
                     </div>
 
-                    <div className='w-[50%] min-h-80  border-l border-b border-gold flex justify-center items-center'>
-                        <PiKeyThin className='h-48 w-48 text-gray-400 opacity-60' />
+                    <div className='w-full lg:w-[50%] lg:min-h-80  border-l border-b border-gold flex justify-center items-center'>
+                        <PiKeyThin className='h-40 w-40 sm:h-48 sm:w-48 text-gray-400 opacity-60' />
                     </div>
 
                 </div>

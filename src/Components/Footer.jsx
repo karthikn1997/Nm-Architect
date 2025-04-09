@@ -28,10 +28,10 @@ function Footer() {
                 {/* Shining Top Border */}
                 <div className="absolute -top-1 left-0 w-[70%] h-[1px] animate-shine "></div>
 
-                <div className="relative z-10 w-full mx-auto flex flex-col justify-center items-center px-6 text-sm sm:text-[16px] ">
+                <div className="relative z-10 w-full mx-auto flex flex-col justify-center items-center px-3 sm:px-6 text-sm sm:text-[16px] ">
                     {/* Clinic Overview */}
                     <div className="w-full flex flex-col items-center mb-12" data-aos="fade-right">
-                        <h2 className='text-5xl uppercase tracking-widest text-[#fae4af] mb-2' style={{ fontFamily: "Rolland" }}><span className="text-white" style={{ fontFamily: "Rolland" }}>Nm Square</span> Architecture</h2>
+                        <h2 className='text-3xl sm:text-4xl lg:text-5xl uppercase tracking-widest text-[#fae4af] mb-2 text-center' style={{ fontFamily: "Rolland" }}><span className="text-white" style={{ fontFamily: "Rolland" }}>Nm Square</span> Architecture</h2>
                        
                         <p className="text-center text-sm tracking-widest text-gold">
                             Build Your Future with Our Plots
@@ -40,11 +40,11 @@ function Footer() {
 
                     {/* Grid for 4 Columns */}
                     <div
-                        className="w-full grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-8 sm:place-items-center "
+                        className="w-full grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 sm:gap-8 sm:place-items-center "
                         data-aos="fade-up"
                     >
                         {/* Quick Links with Icons */}
-                        <div className=" justify-center items-center xs:justify-start xs:items-start" data-aos="fade-right">
+                        <div className="flex justify-start items-start mb-4" data-aos="fade-right">
 
                             <ul className="space-y-2 flex flex-col">
                                 <h2 className="text-lg font-semibold mb-2 text-left text-gray-300">Quick Links</h2>
@@ -62,8 +62,8 @@ function Footer() {
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <FaHeart className="text-gold opacity-80" />
-                                    <Link to="/Transformation" onClick={scrollToTop} className=" hover:text-gold">
-                                        Products Page
+                                    <Link to="/portfolio" onClick={scrollToTop} className=" hover:text-gold">
+                                        Portfolio Page
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
@@ -76,7 +76,7 @@ function Footer() {
                         </div>
 
                         {/* Treatment Sections */}
-                        <div className="flex flex-col justify-center items-center xs:justify-start xs:items-start" data-aos="fade-right">
+                        <div className="flex flex-col justify-start items-start mb-4" data-aos="fade-right">
 
                             <ul className="space-y-2 flex flex-col ">
                                 <h2 className="text-lg font-semibold float-left text-left mb-2 text-gray-300">Our Business</h2>
@@ -127,7 +127,7 @@ function Footer() {
                         </div>
 
                         {/* Address and Timing */}
-                        <div className="flex flex-col col-span-2 xs:col-span-1 justify-center items-center xs:justify-start xs:items-start" data-aos="fade-right ">
+                        <div className="flex flex-col col-span-2 xs:col-span-1 justify-center items-center xs:justify-start xs:items-start mb-4 mt-8 xs:mt-0" data-aos="fade-right ">
                             <h2 className="text-lg font-semibold float-left mb-2 text-gray-300">Address </h2>
                             <address className="sm:w-[200px] not-italic mb-2 text-center xs:text-left">
                                 1A, K.V.N Building,

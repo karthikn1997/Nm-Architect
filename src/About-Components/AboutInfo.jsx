@@ -6,19 +6,19 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const AboutInfo = () => {
     return (
-        <div className='w-full min-h-screen py-10'>
+        <div className='w-full min-h-screen py-4 sm:py-10'>
 
-            <div className='relative w-[80%] mx-auto flex flex-col lg:flex-row justify-center items-center overflow-hidden gap-10 mb-10 border-b border-gold border-opacity-60 pb-10'>
+            <div className='relative w-full sm:w-[80%] mx-auto flex flex-col lg:flex-row justify-center items-center overflow-hidden sm:gap-10 mb-4 sm:mb-10 border-b border-gold border-opacity-60 pb-4 sm:pb-10'>
 
-                <div className='relative w-full lg:w-[50%] h-[40vh] sm:min-h-[60vh] flex justify-start items-center ' data-aos="slide-left" data-aos-delay="300">
-                    <img src={logo} className="w-[70%] object-cover" alt="" />
+                <div className='relative w-full lg:w-[50%] h-[40vh] sm:min-h-[60vh] flex justify-center sm:justify-start items-center ' data-aos="slide-left" data-aos-delay="300">
+                    <img src={logo} className="w-[60%] sm:w-[70%] object-cover" alt="" />
                     {/* <h2 className="text-gray-300 text-5xl font-bold "><span className="text-gold">About </span>Us</h2> */}
                 </div>
                 <div className='relative w-full lg:w-[50%] min-h-[50vh] flex flex-col justify-center items-center ' data-aos="slide-right" data-aos-delay="300">
                     <div className='w-full text-justify p-6 md:p-0 flex flex-col justify-center items-center lg:justify-start lg:items-start'>
                         <h1 className='uppercase text-sm md:text-lg tracking-wider text-gray-400 mb-4 border-b border-gold border-opacity-60 pb-1'>Nm Square Architecture Company</h1>
-                        <p className='tracking-wider text-gold text-3xl md:text-4xl text-center lg:text-left' >Your New Plot is Waiting </p>
-                        <p className='text-gray-400 text-lg my-4 text-center lg:text-justify'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati, molestias aliquam odio tenetur dignissimos consequatur omnis possimus ratione est tempora illo, magni consequuntur, quidem cum ea unde eveniet nemo.</p>
+                        <p className='tracking-wider text-gold text-2xl sm:text-3xl md:text-4xl text-center lg:text-left' >Your New Plot is Waiting </p>
+                        <p className='text-gray-400 text-lg my-4 text-justify'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati, molestias aliquam odio tenetur dignissimos consequatur omnis possimus ratione est tempora illo, magni consequuntur, quidem cum ea unde eveniet nemo.</p>
                         <a href="/services" className="bg-gradient-to-r from-[#ece9e55c] via-[#26282b73] to-black hover:bg-gradient-to-l text-white font-semibold py-2 px-8 rounded-lg transition duration-300 border-b border-e-2 border-gold whitespace-nowrap " data-aos="flip-left" data-aos-delay="300">
                             <div className='flex items-center gap-3 text-xl text-white'>
                                 <span className='text-lg lg:text-xl text-white tracking-wider'>Services</span><GoArrowUpRight />
@@ -29,16 +29,16 @@ const AboutInfo = () => {
 
             </div>
 
-            <div className='w-[80%] mx-auto flex justify-center items-center py-10'>
+            <div className='w-full sm:w-[80%] mx-auto flex flex-col md:flex-row justify-center items-center py-4 sm:py-10 px-6 sm:px-0 gap-4'>
 
-                <div className='w-[60%] flex flex-col text-white'>
-                    <h2 className='text-5xl tracking-widest mb-4 leading-[60px]' style={{ fontFamily: "Cr" }}>
+                <div className='w-full md:w-[60%] flex flex-col text-white'>
+                    <h2 className='text-4xl sm:text-5xl tracking-widest mb-4 sm:leading-[60px]' style={{ fontFamily: "Cr" }}>
                         We Build <span className='text-[#fae4af]'>Your <br />Dream</span> Building
                     </h2>
-                    <p className='text-xl mb-8 text-gray-400'>
+                    <p className='sm:text-xl mb-8 text-gray-400'>
                         We are creative modern Architects specialising in one-off houses and luxury developments.
                     </p>
-                    <div className='grid grid-cols-2 text-xl italic text-gray-300' >
+                    <div className='grid grid-cols-1 sm:grid-cols-2 text-lg sm:text-xl italic text-gray-300' >
                         <p className='flex items-center gap-4 mb-2'>
                             <span><IoMdCheckmark className='text-gold text-2xl' /></span>Highly Experienced
                         </p>
@@ -61,16 +61,16 @@ const AboutInfo = () => {
                 </div>
 
 
-                <div className='w-[40%] flex justify-end items-start'>
+                <div className='w-full md:w-[40%] flex justify-end items-start'>
                     <img src={info} alt="" className='w-full rounded-md opacity-70' />
                 </div>
             </div>
 
-            <div className='w-[80%] mx-auto flex border-b border-gold py-10 border-opacity-60'>
-                <div className='w-[30%] text-[#fae4af] px-8'>
-                    <h2 className='text-4xl font-light tracking-widest' style={{ fontFamily: "Cr" }}>Portfolio</h2>
+            <div className='w-full sm:w-[80%] mx-auto flex flex-col xl:flex-row border-b border-gold py-4 sm:py-10 border-opacity-60 px-6 sm:px-0'>
+                <div className='w-full xl:w-[30%] text-[#fae4af] xl:px-8'>
+                    <h2 className='text-3xl sm:text-4xl font-light tracking-widest' style={{ fontFamily: "Cr" }}>Portfolio</h2>
                 </div>
-                <div className='w-[70%] text-gray-400 text-justify tracking-wider italic text-lg'>
+                <div className='w-full xl:w-[70%] text-gray-400 text-justify tracking-wider italic sm:text-lg'>
                     <p className=''>Nm Square Architecture has a very strict policy on timely delivery and that is one of the reasons why clients are happy to do business with us. Our commitment towards on-time delivery, innovative designing and attention to details help us to deliver stunning interior and exterior spaces blended with aesthetic and functional aspects. Designing is our passion and this desire and thirst for quality adds a lot our design concepts. We do engage a lot with our customers to understand their requirements completely and provide them with periodic updates through every stage of the project.</p>
                 </div>
             </div>
