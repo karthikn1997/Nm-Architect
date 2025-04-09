@@ -1,13 +1,8 @@
 import React from 'react'
 import bgImage from "../assets/rt.png"
-import { GiBookAura } from "react-icons/gi";
-import { GiTimeTrap } from "react-icons/gi";
-import { MdOutlineVerifiedUser } from "react-icons/md";
-import { SiMinds } from "react-icons/si";
 import { SiAltiumdesigner } from "react-icons/si";
 import { CgLoadbarSound } from "react-icons/cg";
 import { PiLightbulbFilamentLight } from "react-icons/pi";
-import { ImCheckmark2 } from "react-icons/im";
 import { IoCheckmarkDone } from "react-icons/io5";
 import HomeService from './HomeService';
 

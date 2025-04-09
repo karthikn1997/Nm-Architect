@@ -1,8 +1,5 @@
 import React from 'react';
 import { PiBuildingOfficeLight } from "react-icons/pi";
-import { TbBuildingWarehouse } from "react-icons/tb";
-import { FaPeopleRoof } from "react-icons/fa6";
-import { MdDesignServices } from "react-icons/md";
 import { PiBrainLight } from "react-icons/pi";
 import { PiBuildingApartmentLight } from "react-icons/pi";
 import { LiaHouseDamageSolid } from "react-icons/lia";
