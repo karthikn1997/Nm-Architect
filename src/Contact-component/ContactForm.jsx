@@ -64,20 +64,20 @@ const ContactForm = () => {
                 {/* Get in Touch Section */}
                 <div className="w-full lg:w-[50%] text-left mx-auto mt-6 lg:mt-4 sm:pr-10">
                     <div className='flex justify-start items-start gap-4 mb-2 sm:mb-4'>
-                        <h2 className="flex text-2xl sm:text-4xl text-white pb-1 sm:pb-2 border-b border-gold " >Get in Touch </h2><FaHandshake className='hidden lg:block w-8 h-8 sm:w-12 sm:h-12 text-gold' />
+                        <h2 className="flex text-2xl sm:text-4xl text-gray-300 pb-1 sm:pb-2 border-b border-gold " >Get in Touch </h2><FaHandshake className='hidden lg:block w-8 h-8 sm:w-12 sm:h-12 text-gold' />
                     </div>
 
                     <div className='mb-8'>
 
-                        <p className="text-gray-200 mb-8 text-sm sm:text-lg ">We'd love to hear from you! Reach out to us through the following:</p>
+                        <p className="text-gray-300 mb-8 text-sm sm:text-lg ">We'd love to hear from you! Reach out to us through the following:</p>
 
-                        <p className="text-gray-200 mb-2 flex items-center">
+                        <p className="text-gray-300 mb-2 flex items-center">
                             <span className="mr-2 text-2xl"><CiLocationOn /></span> 1A, K.V.N Building, Mill Road, Ramesh Theatre East Side, Palani, Tamil nadu 624601
                         </p>
-                        <p className="text-gray-200 mb-2 flex items-center">
+                        <p className="text-gray-300 mb-2 flex items-center">
                             <span className="mr-2 text-2xl"><CiPhone /></span> Phone: 9994476524, 9999999999
                         </p>
-                        <p className="text-gray-200 mb-2 flex items-center">
+                        <p className="text-gray-300 mb-2 flex items-center">
                             <span className="mr-2 text-2xl"><CiMail /></span> Email: nmsquare@gmail.com
                         </p>
                     </div>

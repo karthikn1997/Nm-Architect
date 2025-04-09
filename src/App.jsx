@@ -13,6 +13,9 @@ import Contact from './Pages/Contact';
 import ProjectDetails from './Residential-Components/ProjectDetails';
 import ProjectDetailsCom from './Commercial-Components/ProjectDetailsCom';
 import Portfolio from './Pages/Portfolio';
+import FurnitureDesign from './Pages/FurnitureDesign';
+import Promotors from './Pages/Promotors';
+import RealEstate from './Pages/RealEstate';
 
 
 function App() {
@@ -44,6 +47,9 @@ function App() {
             <Route path="/portfolio/commercial" element={<Commercial />} />
             <Route path="/portfolio/residential" element={<Residential />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/furnitureDesign" element={<FurnitureDesign />} />
+            <Route path="/realEstate" element={<RealEstate />} />
+            <Route path="/promotors" element={<Promotors />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects/:projectName" element={<ProjectDetails />} />
             <Route path="/commercial-projects/:projectName" element={<ProjectDetailsCom />} />

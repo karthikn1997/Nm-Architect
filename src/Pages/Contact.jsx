@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Bg from "../assets/cont.png"
 import ContactForm from '../Contact-component/ContactForm';
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='w-full min-h-screen -mt-40'>

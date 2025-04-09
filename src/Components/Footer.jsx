@@ -15,7 +15,7 @@ function Footer() {
 
     return (
         <footer
-            className=" text-white md:py-12 relative"
+            className=" text-gray-300 md:py-12 relative"
         >
             <div className="relative bg-black bg-opacity-50 py-8 md:py-12 border-t-4 border-b border-gold border-opacity-60">
 
@@ -50,25 +50,25 @@ function Footer() {
                                 <h2 className="text-lg font-semibold mb-2 text-left text-gray-300">Quick Links</h2>
                                 <li className="flex items-center space-x-2">
                                     <FaHome className="text-gold opacity-80" />
-                                    <Link to="/" onClick={scrollToTop} className=" hover:text-gold">
+                                    <Link to="/" onClick={scrollToTop} className=" hover:text-gold text-gray-300">
                                         Home Page
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <FaInfoCircle className="text-gold opacity-80" />
-                                    <Link to="/about" onClick={scrollToTop} className=" hover:text-gold">
+                                    <Link to="/about" onClick={scrollToTop} className=" hover:text-gold text-gray-300">
                                         About Us Page
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <FaHeart className="text-gold opacity-80" />
-                                    <Link to="/portfolio" onClick={scrollToTop} className=" hover:text-gold">
+                                    <Link to="/portfolio" onClick={scrollToTop} className=" hover:text-gold text-gray-300">
                                         Portfolio Page
                                     </Link>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <FaPhone className="text-gold opacity-80" />
-                                    <Link to="/contact" onClick={scrollToTop} className=" hover:text-gold">
+                                    <Link to="/contact" onClick={scrollToTop} className=" hover:text-gold text-gray-300">
                                         Contact Page
                                     </Link>
                                 </li>
@@ -85,7 +85,7 @@ function Footer() {
                                     <Link
                                         to="/portfolio"
                                         onClick={scrollToTop}
-                                        className=" hover:text-gold"
+                                        className=" hover:text-gold text-gray-300"
                                     >
                                         Architecture Design
                                     </Link>
@@ -94,9 +94,9 @@ function Footer() {
                                 <li className="flex items-center space-x-2">
                                     <LuDiamond className="text-gold" />
                                     <Link
-                                        to="/"
+                                        to="/furnitureDesign"
                                         onClick={scrollToTop}
-                                        className=" hover:text-gold"
+                                        className=" hover:text-gold text-gray-300"
                                     >
                                         Unique Furniture Design
                                     </Link>
@@ -105,20 +105,20 @@ function Footer() {
                                 <li className="flex items-center space-x-2">
                                     <LuDiamond className="text-gold" />
                                     <Link
-                                        to="/"
+                                        to="/realEstate"
                                         onClick={scrollToTop}
-                                        className=" hover:text-gold"
+                                        className=" hover:text-gold text-gray-300"
                                     >
                                         Real Estate
                                     </Link>
                                 </li>
 
                                 <li className="flex items-center space-x-2">
-                                    <LuDiamond className="text-gold" />
+                                    <LuDiamond className="text-gold " />
                                     <Link
-                                        to="/"
+                                        to="/promotors"
                                         onClick={scrollToTop}
-                                        className=" hover:text-gold"
+                                        className=" hover:text-gold text-gray-300"
                                     >
                                         Promotors
                                     </Link>
@@ -129,24 +129,24 @@ function Footer() {
                         {/* Address and Timing */}
                         <div className="flex flex-col col-span-2 xs:col-span-1 justify-center items-center xs:justify-start xs:items-start mb-4 mt-8 xs:mt-0" data-aos="fade-right ">
                             <h2 className="text-lg font-semibold float-left mb-2 text-gray-300">Address </h2>
-                            <address className="sm:w-[200px] not-italic mb-2 text-center xs:text-left">
+                            <address className="sm:w-[200px] not-italic mb-2 text-center xs:text-left text-gray-300">
                                 1A, K.V.N Building,
                             </address>
                             <p className='mb-2'>
-                                <span className="">Mill Road, Ramesh Theatre East Side</span>
+                                <span className="text-gray-300">Mill Road, Ramesh Theatre East Side</span>
                             </p>
                             <p className='mb-2'>
-                                <span className="">Palani, Tamil nadu 624601</span>
+                                <span className="text-gray-300">Palani, Tamil nadu 624601</span>
                             </p>
                             <p lassName='' >
-                                <span className="">nmsquarearchitecture@gmail.com</span>
+                                <span className="text-gray-300">nmsquarearchitecture@gmail.com</span>
                             </p>
                         </div>
                     </div>
 
                     {/* Copyright Section */}
                     <div className="text-center mt-12" >
-                        <p className='text-xs sm:text-sm'>
+                        <p className='text-xs sm:text-sm text-gray-300'>
                             <span className="text-gold">&copy; {new Date().getFullYear()} </span>
                             Nm Square Architecture. All rights reserved.
                         </p>
